@@ -56,124 +56,111 @@
           <form class="selection__form" action="#" method="get">
 
 
-            <fieldset class="selection-card questionary">
+            <fieldset class="selection__card questionary">
               <div class="questionary__wrapper">
                 <h3 class="questionary__title">Заполните анкету, и мы подберем<br>
                   программу питания для вашего кота
                 </h3>
-                <label class="questionary__label">
-                  <input class="questionary__input" type="text" placeholder="Барсик" name="name">
-                  <span class="questionary__name">Имя:*</span>
-                </label>
 
-                <label class="questionary__label">
-                  <input type="text" placeholder="7" name="weight">
-                  <span class="questionary__name">Вес (кг):*</span>
-                </label>
+                <div class="questionary__container">
+                  <label class="questionary__label" for="questionary__name">Имя:*</label>
+                  <input class="questionary__input" id="questionary__name" type="text" placeholder="Барсик" name="name" required>
+                </div>
 
-                <label class="selection-card__label">
-                  <input type="text" placeholder="7" name="age">
-                  <span class="questionary__name">Возраст (лет):</span>
-                </label>
+                <div class="questionary__container">
+                  <label class="questionary__label" for="questionary__weight">Вес (кг):*</label>
+                  <input class="questionary__input" id="questionary__weight" type="text" placeholder="7" name="weight" required>
+                </div>
+
+                <div class="questionary__container">
+                  <label class="questionary__label" for="questionary__age">Возраст (лет):</label>
+                  <input class="questionary__input" id="questionary__age" type="text" placeholder="7" name="age" required>
+                </div>
+
               </div>
             </fieldset>
 
 
-            <fieldset class="selection-card weight-selection">
+            <fieldset class="selection__card weight-selection">
               <div class="weight-selection__wrapper">
                 <ul class="weight-selection__list">
                   <li class="weight-selection__item">
-                    <label class="weight-selection__label">
-                      <input class="weight-selection__input" type="radio" name="weight-group" value="get-slim" checked />
-                      <span class="weight-selection__control-label">Похудение</span>
-                    </label>
+                      <input class="weight-selection__input" id="weight-selection-get-slim" type="radio" name="weight-group" value="get-slim" checked />
+                      <label class="weight-selection__label" for="weight-selection-get-slim">Похудение</label>
                   </li>
 
                   <li class="weight-selection__item">
-                    <label class="weight-selection__label">
-                      <input class="weight-selection__input" type="radio" name="weight-group" value="get-fat"/>
-                      <span class="weight-selection__control-label">Набор массы</span>
-                    </label>
+                    <input class="weight-selection__input" id="weight-selection-get-fat" type="radio" name="weight-group" value="get-fat"/>
+                    <label class="weight-selection__label" for="weight-selection-get-fat">Набор массы</label>
                   </li>
 
                   <li class="weight-selection__item">
-                    <label class="weight-selection__label">
-                      <input class="weight-selection__input" type="radio" name="weight-group" value="need-advice"/>
-                      <span class="weight-selection__control-label">Не знаю (нужен ваш совет)</span>
-                    </label>
+                    <input class="weight-selection__input" id="weight-selection-need-advice" type="radio" name="weight-group" value="need-advice"/>
+                    <label class="weight-selection__label" for="weight-selection-need-advice">Не знаю (нужен ваш совет)</label>
                   </li>
                 </ul>
               </div>
             </fieldset>
 
-            <fieldset class="selection-card contacts-data">
+            <fieldset class="selection__card contacts-data">
               <div class="contacts-data__wrapper">
                 <h3 class="contacts-data__title">Контактные данные
                   (владельца кота)</h3>
-                <label class="contacts-data__label">
-                  <input class="contacts-data__input" type="text" placeholder="kuklachev@gmail.com" name="e-mail">
-                  <span class="contacts-data__control-label">E-mail:*</span>
-                </label>
 
-                <label class="contacts-data__label">
-                  <input class="contacts-data__input" type="text" placeholder="8 (960) 900-60-90" name="phone">
-                  <span class="contacts-data__control-label">Телефон:*</span>
-                </label>
+                <div class="contacts-data__block">
+                  <label class="contacts-data__label" for="contacts-data-e-mail">E-mail:*</label>
+                  <input class="contacts-data__input" id="contacts-data-e-mail" type="text" placeholder="kuklachev@gmail.com" name="e-mail">
+                </div>
+
+                <div class="contacts-data__block">
+                  <label class="contacts-data__label" for="contacts-data-phone">Телефон:*</label>
+                  <input class="contacts-data__input" id="contacts-data-phone" type="text" placeholder="8 (960) 900-60-90" name="phone">
+                </div>
+
               </div>
             </fieldset>
 
-            <fieldset class="selection-card comment-data">
+            <fieldset class="selection__card comment-data">
               <div class="comment-data__wrapper">
                 <h3 class="comment-data__title">Комментарий</h3>
+
                 <label class="comment-data__label">
-                  <input class="comment-data__input" type="text" placeholder="Расскажите обо всех повадках кота" name="comment">
+                  <input class="comment-data__input" type="textarea" placeholder="Расскажите обо всех повадках кота" name="comment">
                 </label>
               </div>
             </fieldset>
 
-            <fieldset class="selection-card addition-data">
+            <fieldset class="selection__card addition-data">
               <div class="addition-data__wrapper">
-                <h3 class="addition-data__">Дополнительно</h3>
+                <h3 class="addition-data__title">Дополнительно</h3>
                 <ul class="addition-data__list">
                   <li class="addition-data__item">
-                      <label class="addition-data__label">
-                        <input class="addition-data__input" type="checkbox" name="addition-data-group" value="sweetener" checked />
-                        <span class="addition-data__control-label">Сахарозаменитель</span>
-                      </label>
+                      <input class="addition-data__input" id="addition-data-sweetener" type="checkbox" name="addition-data-group" value="sweetener" checked />
+                      <label class="addition-data__label" for="addition-data-sweetener">Сахарозаменитель</label>
                   </li>
 
                   <li class="addition-data__item">
-                    <label class="addition-data__label">
-                      <input class="addition-data__input" type="checkbox" name="addition-data-group" value="drinking-water"/>
-                      <span class="addition-data__control-label">Питьевая вода</span>
-                    </label>
+                      <input class="addition-data__input" id="addition-data-drinking-water" type="checkbox" name="addition-data-group" value="drinking-water"/>
+                      <label class="addition-data__label" for="addition-data-drinking-water">Питьевая вода</label>
+                    </li>
+
+                  <li class="addition-data__item">
+                    <input class="addition-data__input"  id="addition-data-milk" type="checkbox" name="addition-data-group" value="milk"/>
+                    <label class="addition-data__label" for="addition-data-milk">Молоко</label>
                   </li>
 
                   <li class="addition-data__item">
-                    <label class="addition-data__label">
-                      <input class="addition-data__input" type="checkbox" name="addition-data-group" value="milk"/>
-                      <span class="addition-data__control-label">Молоко</span>
-                    </label>
-                  </li>
-
-                  <li class="addition-data__item">
-                    <label class="addition-data__label">
-                      <input class="addition-data__input" type="checkbox" name="addition-data-group" value="vitamins"/>
-                      <span class="addition-data__control-label">Витамины</span>
-                    </label>
+                    <input class="addition-data__input" id="addition-data-vitamins" type="checkbox" name="addition-data-group" value="vitamins"/>
+                    <label class="addition-data__label" for="addition-data-vitamins">Витамины</label>
                   </li>
                 </ul>
               </div>
 
             </fieldset>
 
-            <div class="selection-card__button">
-              <a class="button">Заказать</a>
-            </div>
+            <button class="selection__card-button button" type="submit">Отправить заявку</button>
 
-            <div class="selection-card__note">
-              <span class="selection-card__note-text">* — Обязательные поля</span>
-            </div>
+            <span class="selection-card__note">* — Обязательные поля</span>
 
           </form>
 
