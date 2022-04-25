@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "Oswald";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
+}
+@font-face {
+  font-family: "Oswald";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.page {
+  height: 100%;
+  font-size: 14px;
+  font-family: "Oswald", "Arial", sans-serif;
+  line-height: 18px;
+}
+.page__body {
+  min-height: 100%;
+  margin: 0;
+  background-color: #ffffff;
+  color: #000000;
+}
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-nav-logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+.main-container {
+  flex-grow: 1;
+}
+.programm {
+  background-image: url("../img/index-background-cat.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #68B738;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #ffffff;
+}
+.get-slim-fat {
+  background-color: #EAEAEA;
+  display: flex;
+  flex-direction: column;
+}
+.advantages {
+  display: flex;
+  flex-direction: column;
+}
+.example {
+  background-color: #EAEAEA;
+  display: flex;
+  flex-direction: column;
+}
+.before-after {
+  background-color: #EAEAEA;
+  display: flex;
+  flex-direction: column;
+}
+.main-footer {
+  display: flex;
+  flex-direction: column;
+}
+.map {
+  display: flex;
+  flex-direction: column;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  background-color: #EAEAEA;
+}
+.htmlacademy {
+  display: flex;
+  justify-content: space-between;
+  background-color: #EAEAEA;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  color: #444444;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+}
+.additional-cards.less {
+  display: flex;
+  flex-direction: column;
+}
+.banner-present {
+  background-image: url("../img/gift.jpg");
+  background-color: #68B738;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+.selection {
+  display: flex;
+  flex-direction: column;
+}
+/*# sourceMappingURL=style.css.map */
