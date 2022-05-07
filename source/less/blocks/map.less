@@ -2,3 +2,139 @@
   display: flex;
   flex-direction: column;
 }
+
+@media (min-width: @mobile-width) {
+  .map__invitation-list {
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+    margin: 26px auto;
+    min-height: 60px;
+  }
+
+  .map__invitation-invite {
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: @specialblack;
+    min-width: 136px;
+  }
+
+  .map__invitation-adress {
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: @darkgrey;
+    min-width: 139px;
+  }
+
+  .map__wrapper {
+    background-image: url("../img/map.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    position: relative;
+  }
+
+  .map__image {
+    position: absolute;
+    z-index: 3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .map__invitation-list {
+    display: flex;
+    justify-content: space-between;
+    width: 628px;
+    margin: 56px auto;
+    min-height: 80px;
+  }
+
+  .map__invitation-invite {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: @specialblack;
+    min-width: 170px;
+  }
+
+  .map__invitation-adress {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: right;
+    color: @darkgrey;
+    min-width: 160px;
+  }
+
+  .map__wrapper {
+    background-image: url("../img/map.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    position: relative;
+  }
+
+  .map__image {
+    position: absolute;
+    z-index: 3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map {
+    position: relative;
+  }
+
+  .map__invitation-list-wrapper {
+    position: absolute;
+    width: 565px;
+    height: 198px;
+  }
+
+  .map__invitation-list {
+    display: flex;
+    justify-content: space-between;
+    width: 405px;
+    margin: auto;
+    min-height: 86px;
+  }
+
+  .map__invitation-invite {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: @specialblack;
+    min-width: 163px;
+  }
+
+  .map__invitation-adress {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: @darkgrey;
+    min-width: 155px;
+  }
+
+  .map__image {
+    position: absolute;
+    z-index: 3;
+  }
+}
+

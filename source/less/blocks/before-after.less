@@ -1,5 +1,101 @@
 .before-after {
-  background-color: @lightgrey;
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+
+@media (min-width: @mobile-width) {
+  .before-after {
+    background-color: @lightgrey;
+  }
+
+  .before-after__wrapper {
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  .before-after__image {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .before-after__image--cat-before {
+    position: relative;
+    z-index: 2;
+  }
+
+  .before-after__image--cat-after {
+    position: relative;
+    z-index: 1;
+  }
+
+  .before-after__range {
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  .before-after__button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    height: 30px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .before-after {
+    background-color: @lightgrey;
+    background-position: bottom;
+    background-size: 100% 50%;
+    width: 100%;
+  }
+
+  .before-after__button-wrapper {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .before-after__image {
+    display: block;
+    margin-bottom: 25px;
+  }
+
+  .before-after__image--cat-before {
+    position: relative;
+    z-index: 2;
+  }
+
+  .before-after__image--cat-after {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .before-after {
+    width: 591px;
+  }
+
+  .before-after__button-wrapper {
+    width: 591px;
+    margin-left: auto;
+  }
+
+  .before-after__image {
+    display: block;
+  }
+
+  .before-after__image--cat-before {
+    position: relative;
+    z-index: 2;
+  }
+
+  .before-after__image--cat-after {
+    position: relative;
+    z-index: 1;
+  }
 }

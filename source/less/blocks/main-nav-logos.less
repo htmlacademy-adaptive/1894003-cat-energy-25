@@ -3,3 +3,54 @@
   justify-content: space-between;
   align-items: center;
 }
+
+@media (min-width: @mobile-width) {
+  .main-nav-logos {
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  .main-nav-logos__logo {
+    margin: 10px 0 18px 0;
+  }
+
+  .main-nav-logos__logo-letters {
+    margin: 23px 0 24px 0;
+  }
+
+  .main-header__toggle {
+    margin: 23px 0 25px 0;
+  }
+
+  .main-header__toggle--open {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 174px;
+    margin: 0 auto;
+  }
+
+  .main-header__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 202px;
+    margin: 0 auto;
+  }
+
+  .main-header__toggle {
+    display: none;
+  }
+}
