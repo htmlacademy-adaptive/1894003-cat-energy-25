@@ -1,6 +1,4 @@
 .before-after {
-  display: flex;
-  flex-direction: column;
   width: 100%;
 }
 
@@ -17,16 +15,8 @@
   .before-after__image {
     display: block;
     margin-bottom: 15px;
-  }
-
-  .before-after__image--cat-before {
-    position: relative;
-    z-index: 2;
-  }
-
-  .before-after__image--cat-after {
-    position: relative;
-    z-index: 1;
+    width: 280px;
+    height: 241px;
   }
 
   .before-after__range {
@@ -42,60 +32,69 @@
     justify-content: space-between;
     width: 200px;
     height: 30px;
-    margin-bottom: 40px;
+    margin: 0 auto 40px auto;
   }
 }
 
 @media (min-width: @tablet-width) {
   .before-after {
-    background-color: @lightgrey;
-    background-position: bottom;
-    background-size: 100% 50%;
     width: 100%;
+    background: none;
+  }
+
+  .before-after__wrapper {
+    width: 511px;
+    margin: 0 auto 56px auto;
   }
 
   .before-after__button-wrapper {
-    width: 708px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 511px;
+    margin: 0;
   }
 
   .before-after__image {
     display: block;
     margin-bottom: 25px;
+    width: 592px;
+    height: 511px;
   }
 
-  .before-after__image--cat-before {
-    position: relative;
-    z-index: 2;
-  }
-
-  .before-after__image--cat-after {
-    position: relative;
-    z-index: 1;
+  .before-after__range {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
   }
 }
 
 @media (min-width: @desktop-width) {
   .before-after {
-    width: 591px;
+    width: 592px;
+    background: none;
   }
 
   .before-after__button-wrapper {
-    width: 591px;
-    margin-left: auto;
+    width: 511px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
   }
 
   .before-after__image {
     display: block;
+    margin-bottom: 25px;
+    width: 592px;
+    height: 511px;
   }
 
-  .before-after__image--cat-before {
-    position: relative;
-    z-index: 2;
-  }
-
-  .before-after__image--cat-after {
-    position: relative;
-    z-index: 1;
+  .before-after__range {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
   }
 }

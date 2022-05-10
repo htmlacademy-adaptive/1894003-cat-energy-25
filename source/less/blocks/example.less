@@ -2,11 +2,6 @@
   width: 100%;
 }
 
-.example__wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
 .example__list {
   display: flex;
   justify-content: space-between;
@@ -28,6 +23,7 @@
 
   .example__title {
     font-family: "Oswald", sans-serif;
+    font-weight: 400;
     font-size: 36px;
     line-height: 40px;
     color: #000000;
@@ -62,6 +58,7 @@
     line-height: 24px;
     text-align: center;
     text-transform: uppercase;
+    padding-top: 16px;
   }
 
   .example__description {
@@ -71,10 +68,12 @@
     line-height: 12px;
     text-align: center;
     color: @darkgrey;
+    margin: 0;
+    padding-top: 10px;
   }
 
   .example__expenses-wrapper {
-    min-width: 188px;
+    width: 188px;
     display: flex;
     align-items: center;
     margin: 0 auto 40px auto;
@@ -88,10 +87,19 @@
     text-align: center;
     text-transform: uppercase;
     color: #000000;
+    margin: 0 3px;
   }
 }
 
 @media (min-width: @tablet-width) {
+  .example {
+    background-color: @white;
+    width: 100%;
+    background-image: url("../img/before-after-background.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+
   .example__wrapper {
     width: 708px;
     margin: 0 auto;
@@ -117,10 +125,19 @@
 
   .example__list-wrapper {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: space-between;
     margin-bottom: 80px;
     width: 100%;
+  }
+
+  .example__list-wrapper-small {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 708px;
   }
 
   .example__list {
@@ -158,6 +175,7 @@
     display: flex;
     flex-direction: column;
     justify-content: right;
+    margin: 0 0 9px 0;
   }
 
   .example__expenses {
@@ -169,6 +187,7 @@
     color: #000000;
     text-transform: uppercase;
     min-width: 174px;
+    margin: 3px 0;
   }
 }
 
@@ -176,12 +195,18 @@
   .example {
     display: flex;
     justify-content: space-between;
-    background-color: @lightgrey;
+    background-color: @white;
+    width: 100%;
+    background-image: url("../img/before-after-background.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
   }
 
   .example__wrapper {
-    width: 436px;
-    padding-top: 43px;
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+    padding: 43px 0 0 0;
   }
 
   .example__title {
@@ -198,16 +223,24 @@
     font-weight: 400;
     line-height: 24px;
     color: @darkgrey;
-    margin-bottom: 69px;
+    margin: 0 0 69px 0;
   }
 
   .example__list-wrapper {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
     margin-bottom: 80px;
-    width: 366px;
+    width: 436px;
   }
+
+  .example__list-wrapper-small {
+    display: flex;
+    flex-direction: column;
+    width: 436px;
+    align-items: flex-start;
+  }
+
 
   .example__list {
     width: 366px;
@@ -241,9 +274,11 @@
   }
 
   .example__expenses-wrapper {
-    min-width: 327px;
+    width: 327px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    margin: 0;
   }
 
   .example__expenses {
@@ -254,5 +289,6 @@
     text-align: left;
     color: #000000;
     text-transform: uppercase;
+    margin: 0 65px 0 0;
   }
 }

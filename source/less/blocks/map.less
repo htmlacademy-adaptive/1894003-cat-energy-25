@@ -1,12 +1,17 @@
 .map {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
 }
 
 @media (min-width: @mobile-width) {
+  .map__invitation-list-wrapper {
+    width: 280px;
+    margin: 0 auto;
+  }
+
   .map__invitation-list {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 280px;
     margin: 26px auto;
     min-height: 60px;
@@ -18,8 +23,9 @@
     font-weight: 400;
     line-height: 20px;
     text-align: left;
+    text-transform: uppercase;
     color: @specialblack;
-    min-width: 136px;
+    min-width: 125px;
   }
 
   .map__invitation-adress {
@@ -30,28 +36,42 @@
     text-align: left;
     color: @darkgrey;
     min-width: 139px;
+    min-height: 60px;
+  }
+
+  .map__invitation-adress-text {
+    margin: 0;
   }
 
   .map__wrapper {
     background-image: url("../img/map.jpg");
     background-repeat: no-repeat;
-    background-position: left top;
-    position: relative;
+    background-position: center top;
+    width: 320px;
+    height: 362px;
+    margin: 0 auto;
   }
 
   .map__image {
-    position: absolute;
-    z-index: 3;
+    position: relative;
+    top: 138px;
+    left: 127px;
   }
 }
 
 @media (min-width: @tablet-width) {
+  .map__invitation-list-wrapper {
+    width: 708px;
+    margin: 0 auto;
+  }
+
   .map__invitation-list {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 628px;
     margin: 56px auto;
-    min-height: 80px;
+    min-height: 87px;
   }
 
   .map__invitation-invite {
@@ -77,16 +97,25 @@
     min-width: 160px;
   }
 
+  .map__invitation-adress-text {
+    margin: 5px 0;
+  }
+
   .map__wrapper {
-    background-image: url("../img/map.jpg");
+    background-image: url("../img/map-tablet.jpg");
     background-repeat: no-repeat;
-    background-position: left top;
-    position: relative;
+    background-position: center top;
+    width: 768px;
+    height: 400px;
+    margin: 0 auto;
   }
 
   .map__image {
-    position: absolute;
-    z-index: 3;
+    position: relative;
+    width: 113px;
+    height: 106px;
+    top: 138px;
+    left: 330px;
   }
 }
 
@@ -97,15 +126,19 @@
 
   .map__invitation-list-wrapper {
     position: absolute;
+    top: 98px;
+    left: 53px;
     width: 565px;
     height: 198px;
+    background-color: @white;
   }
 
   .map__invitation-list {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 405px;
-    margin: auto;
+    margin: 56px auto;
     min-height: 86px;
   }
 
@@ -132,9 +165,21 @@
     min-width: 155px;
   }
 
+  .map__wrapper {
+    background-image: url("../img/map-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 1440px;
+    height: 400px;
+    margin: 0 auto;
+  }
+
   .map__image {
-    position: absolute;
-    z-index: 3;
+    position: relative;
+    width: 113px;
+    height: 106px;
+    top: 150px;
+    left: 883px;
   }
 }
 

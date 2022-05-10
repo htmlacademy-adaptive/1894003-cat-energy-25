@@ -1,8 +1,3 @@
-.advantages {
-  display: flex;
-  flex-direction: column;
-}
-
 .advantages__list {
   list-style: none;
   margin: 0;
@@ -21,11 +16,13 @@
     font-size: 36px;
     line-height: 40px;
     color: #000000;
+    font-weight: 400;
     margin-bottom: 40px;
   }
 
   .advantages__list {
     margin-bottom: 49px;
+    width: 280px;
   }
 
   .advantages__item--benefit {
@@ -61,6 +58,12 @@
     padding: 5px 0 5px 80px;
     height: 60px;
     width: 280px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+
+  .advantages__item-span {
+    width: 195px;
   }
 }
 
@@ -81,31 +84,34 @@
 
   .advantages__list {
     display: grid;
-    grid-template-columns: 234px 234px;
-    column-gap: 59px;
+    width: 708px;
+    grid-template-columns: 323px 323px;
+    column-gap: 62px;
     grid-template-rows: 227px 227px;
     row-gap: 90px;
     margin-bottom: 47px;
   }
 
   .advantages__item--benefit {
-    background-image: url("../img/benefit.svg") left top / 80px 80px no-repeat,
-    url("../img/1.svg") right top no-repeat;
+    background-image: url("../img/benefit-tablet.svg") left top no-repeat;
   }
 
   .advantages__item--powder {
-    background-image: url("../img/powder.svg") left top / 80px 80px no-repeat,
-    url("../img/2.svg") right top no-repeat;
+    background-image: url("../img/powder-tablet.svg") left top no-repeat;
   }
 
   .advantages__item--functional-food {
-    background-image: url("../img/functional-food.svg") left top / 80px 80px no-repeat,
-    url("../img/3.svg") right top no-repeat;
+    background-image: url("../img/functional-food-tablet.svg") left top no-repeat;
   }
 
   .advantages__item--time {
-    background-image: url("../img/time.svg") left top / 80px 80px no-repeat,
-    url("../img/4.svg") right top no-repeat;
+    background-image: url("../img/time-tablet.svg") left top no-repeat;
+  }
+
+  .advantages__item {
+    padding-top: 112px;
+    padding-left: 0;
+    width: 234px;
   }
 
   .advantages__item-span {
@@ -115,14 +121,14 @@
     line-height: 24px;
     color: @darkgrey;
     min-height: 72px;
-    min-width: 209px;
+    width: 201px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .advantages {
     width: 1220px;
-    margin: 0 auto;
+    margin: 0 auto 39px auto;
   }
 
   .advantages__title {
@@ -136,27 +142,28 @@
   .advantages__list {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 39px;
+    width: 1220px;
   }
 
   .advantages__item--benefit {
-    background-image: url("../img/benefit.svg") left top / 80px 80px no-repeat,
-    url("../img/1.svg") right top no-repeat;
+    background-image: url("../img/benefit-tablet.svg") left top no-repeat;
   }
 
   .advantages__item--powder {
-    background-image: url("../img/powder.svg") left top / 80px 80px no-repeat,
-    url("../img/2.svg") right top no-repeat;
+    background-image: url("../img/powder-tablet.svg") left top no-repeat;
   }
 
   .advantages__item--functional-food {
-    background-image: url("../img/functional-food.svg") left top / 80px 80px no-repeat,
-    url("../img/3.svg") right top no-repeat;
+    background-image: url("../img/functional-food-tablet.svg") left top no-repeat;
   }
 
   .advantages__item--time {
-    background-image: url("../img/time.svg") left top / 80px 80px no-repeat,
-    url("../img/4.svg") right top no-repeat;
+    background-image: url("../img/time-tablet.svg") left top no-repeat;
+  }
+
+  .advantages__item {
+    width: 250px;
+    padding-bottom: 44px;
   }
 
   .advantages__item-span {

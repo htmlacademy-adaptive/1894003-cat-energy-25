@@ -3,26 +3,15 @@
   font-weight: 400;
 }
 
-.programm__wrapper {
-  display: flex;
-}
-
 @media (min-width: @mobile-width) {
   .programm {
-    background-image: url("../img/index-background-cat.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: @basicgreen;
-    width: 100%;
-    padding: 29px 20px;
     text-align: center;
     color: @white;
   }
 
   .programm__wrapper {
-    align-items: center;
-    width: 280px;
     margin: 0 auto;
+    width: 280px;
   }
 
   .programm__title {
@@ -35,6 +24,7 @@
     font-size: 14px;
     line-height: 14px;
     margin-bottom: 28px;
+    font-weight: 400;
   }
 }
 
@@ -52,38 +42,67 @@
     font-size: 60px;
     line-height: 60px;
     text-align: left;
-    margin: 0 0 41px 88px;
-  }
-
-  .programm__slogan {
-    font-size: 14px;
-    line-height: 14px;
-    text-align: left;
-    margin: 0 0 20px 88px;
-  }
-
-  .programm.button {
-    margin-left: 88px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .programm {
-    min-width: 920px;
-    margin: 0 0 54px 82px;
-  }
-
-  .programm__title {
-    font-size: 60px;
-    line-height: 60px;
-    text-align: left;
-    margin: 85px 0 40px 0;
+    margin: 65px 0 41px 88px;
   }
 
   .programm__slogan {
     font-size: 20px;
     line-height: 20px;
     text-align: left;
-    margin-bottom: 52px;
+    margin: 0 0 20px 88px;
+    text-transform: uppercase;
+  }
+
+  .programm__image-button {
+    margin-left: 88px;
+  }
+
+  .programm__image {
+    width: 708px;
+    height: 609px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .programm {
+    width: 1220px;
+    margin: 0 0 auto;
+  }
+
+  .programm__wrapper {
+    margin: 0 0 54px 82px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .programm__title {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    margin: 111px 0 40px 0;
+    width: 420px;
+  }
+
+  .programm__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    margin: 0 0 52px 0;
+    width: 420px;
+  }
+
+  .programm__image {
+    width: 552px;
+    height: 499px;
+    display: inline;
+    position: absolute;
+    top: 36px;
+    left: 403px;
+  }
+
+  .programm__image-button {
+    margin: 0 0 185px 0;
   }
 }
