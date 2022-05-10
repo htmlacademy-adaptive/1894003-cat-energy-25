@@ -1,5 +1,61 @@
 .main-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  width: 100%;
+}
+
+@media (min-width: @mobile-width) {
+  .main-header {
+    width: 100%;
+    background-image: url("../img/cat-green-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center 66%;
+    background-size: 1072px 302px;
+    max-width: 708px;
+  }
+
+  .main-header__wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-header {
+    background: none;
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .main-header__wrapper {
+    width: 708px;
+    margin: 24px auto 65px auto;
+  }
+
+  .main-header__nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header {
+    width: 100%;
+    background-image: url("../img/cat-green-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    max-width: 2087px;
+  }
+
+  .main-header__wrapper {
+    width: 1220px;
+    margin: 53px auto 29px auto;
+  }
+
+  .main-header__nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1220px;
+    margin: 0 auto;
+  }
 }

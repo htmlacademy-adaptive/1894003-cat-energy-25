@@ -1,5 +1,100 @@
 .before-after {
-  background-color: @lightgrey;
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+}
+
+@media (min-width: @mobile-width) {
+  .before-after {
+    background-color: @lightgrey;
+  }
+
+  .before-after__wrapper {
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  .before-after__image {
+    display: block;
+    margin-bottom: 15px;
+    width: 280px;
+    height: 241px;
+  }
+
+  .before-after__range {
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  .before-after__button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    height: 30px;
+    margin: 0 auto 40px auto;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .before-after {
+    width: 100%;
+    background: none;
+  }
+
+  .before-after__wrapper {
+    width: 511px;
+    margin: 0 auto 56px auto;
+  }
+
+  .before-after__button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 511px;
+    margin: 0;
+  }
+
+  .before-after__image {
+    display: block;
+    margin-bottom: 25px;
+    width: 592px;
+    height: 511px;
+  }
+
+  .before-after__range {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .before-after {
+    width: 592px;
+    background: none;
+  }
+
+  .before-after__button-wrapper {
+    width: 511px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .before-after__image {
+    display: block;
+    margin-bottom: 25px;
+    width: 592px;
+    height: 511px;
+  }
+
+  .before-after__range {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
 }

@@ -1,4 +1,185 @@
 .map {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
 }
+
+@media (min-width: @mobile-width) {
+  .map__invitation-list-wrapper {
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  .map__invitation-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 280px;
+    margin: 26px auto;
+    min-height: 60px;
+  }
+
+  .map__invitation-invite {
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    text-transform: uppercase;
+    color: @specialblack;
+    min-width: 125px;
+  }
+
+  .map__invitation-adress {
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: @darkgrey;
+    min-width: 139px;
+    min-height: 60px;
+  }
+
+  .map__invitation-adress-text {
+    margin: 0;
+  }
+
+  .map__wrapper {
+    background-image: url("../img/map.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 320px;
+    height: 362px;
+    margin: 0 auto;
+  }
+
+  .map__image {
+    position: relative;
+    top: 138px;
+    left: 127px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .map__invitation-list-wrapper {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .map__invitation-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 628px;
+    margin: 56px auto;
+    min-height: 87px;
+  }
+
+  .map__invitation-invite {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: @specialblack;
+    min-width: 170px;
+  }
+
+  .map__invitation-adress {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: right;
+    color: @darkgrey;
+    min-width: 160px;
+  }
+
+  .map__invitation-adress-text {
+    margin: 5px 0;
+  }
+
+  .map__wrapper {
+    background-image: url("../img/map-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 768px;
+    height: 400px;
+    margin: 0 auto;
+  }
+
+  .map__image {
+    position: relative;
+    width: 113px;
+    height: 106px;
+    top: 138px;
+    left: 330px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map {
+    position: relative;
+  }
+
+  .map__invitation-list-wrapper {
+    position: absolute;
+    top: 98px;
+    left: 53px;
+    width: 565px;
+    height: 198px;
+    background-color: @white;
+  }
+
+  .map__invitation-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 405px;
+    margin: 56px auto;
+    min-height: 86px;
+  }
+
+  .map__invitation-invite {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: @specialblack;
+    min-width: 163px;
+  }
+
+  .map__invitation-adress {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: @darkgrey;
+    min-width: 155px;
+  }
+
+  .map__wrapper {
+    background-image: url("../img/map-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 1440px;
+    height: 400px;
+    margin: 0 auto;
+  }
+
+  .map__image {
+    position: relative;
+    width: 113px;
+    height: 106px;
+    top: 150px;
+    left: 883px;
+  }
+}
+
