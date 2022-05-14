@@ -1,4 +1,471 @@
-.card {
+.card__description-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.catalog__cards-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.card__button {
+  background-color: @basicgreen;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  flex-grow: 1;
+}
+
+
+@media (min-width: @mobile-width) {
+  .catalog-cards {
+    width: 100%;
+  }
+
+  .catalog__cards-list {
+    width: 100%;
+  }
+
+  .catalog__cards-item {
+    width: 100%;
+    border-bottom: 1px solid @lightgrey;
+  }
+
+  .card {
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  .card__wrapper {
+    display: grid;
+    width: 280px;
+    padding: 23px 0;
+    grid-template-columns: 140px 70px 70px;
+    grid-template-areas:
+      "i t t"
+      "i d d"
+      "i d d";
+  }
+
+  .card__image-wrapper {
+    order: -1;
+    grid-area: i;
+    width: 140px;
+    height: 112px;
+  }
+
+  .card__title {
+    grid-area: t;
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: @lightblack;
+    text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 18px;
+  }
+
+  .card__image {
+    width: 140px;
+    height: 112px;
+  }
+
+  .card__description-list {
+    grid-area: d;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .card__description {
+    font-family: "Arial", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    color: @darkgrey;
+    margin: 0;
+    padding: 0;
+  }
+
+  .card__explication {
+    font-family: "Arial", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: right;
+    color: @darkgrey;
+    margin: 0;
+    padding: 0;
+  }
+
+  .card__button {
+    margin-bottom: 25px;
+    color: @white;
+    width: 100%;
+  }
+
+  .card-more {
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  .card-more__wrapper {
+    width: 280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-more__cards-plus {
+    margin: 25px auto 27px auto;
+  }
+
+  .card-more__cards-show {
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: @lightblack;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  .card-more__cards-description {
+    font-family: "Arial", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    color: @darkgrey;
+    margin-bottom: 21px;
+  }
+
+  .card__button--more {
+    background-color: #f2f2f2;
+    color: @darkgrey;
+    width: 100%;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-cards {
+    width: 100%;
+  }
+
+  .catalog__cards-list {
+    width: 708;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 324px 324px;
+    grid-template-rows: auto;
+    gap: 60px;
+  }
+
+  .catalog__cards-item {
+    width: 324px;
+    border-bottom: none;
+    background-image: url("../img/catalog-backgr-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+
+  .card {
+    width: 252px;
+    margin: 0 auto;
+  }
+
+  .card__wrapper {
+    width: 252px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 33px;
+  }
+
+  .card__image-wrapper {
+    order: -1;
+    width: 252px;
+    height: 231px;
+    margin-bottom: 11px;
+  }
+
+  .card__image {
+    width: 252px;
+    height: 231px;
+  }
+
+  .card__title {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: @lightblack;
+    text-transform: uppercase;
+    margin: 0 0 21px 0;
+    padding-bottom: 18px;
+  }
+
+  .card__description-list {
+    display: grid;
+    width: 252px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .card__description {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    color: @darkgrey;
+    margin: 0;
+    padding: 8px 0;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .card__explication {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: right;
+    color: @darkgrey;
+    margin: 0;
+    padding: 8px 0;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .card__button {
+    margin-bottom: 39px;
+    width: 100%;
+  }
+
+  .card-more {
+    width: 324px;
+    height: 540px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: @white;
+  }
+
+  .card-more__wrapper {
+    background-color: @white;
+    border: 1px solid #cdcdcd;
+    width: 324px;
+    height: 429px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-more__cards-plus {
+    margin: 52px auto 49px auto;
+    width: 60px;
+    height: 60px;
+  }
+
+  .card-more__cards-show {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+    color: @lightblack;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+  }
+
+  .card-more__cards-description {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: @darkgrey;
+    margin-bottom: 87px;
+  }
+
+  .card__button--more {
+    background-color: #f2f2f2;
+    color: @darkgrey;
+    margin-bottom: 38px;
+    width: 249px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-cards {
+    width: 100%;
+  }
+
+  .catalog__cards-list {
+    width: 1220;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 245px 245px 245px 245px;
+    grid-template-rows: auto;
+    column-gap: auto;
+    row-gap: 62px;
+  }
+
+  .catalog__cards-item {
+    width: 245px;
+    border-bottom: none;
+    background-image: url("../img/catalog-backgr-desk.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+
+  .card {
+    width: 180px;
+    margin: 0 auto;
+  }
+
+  .card__wrapper {
+    width: 180px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 33px;
+  }
+
+  .card__image-wrapper {
+    order: -1;
+    width: 180px;
+    height: 231px;
+    margin-bottom: 14px;
+  }
+
+  .card__image {
+    width: 180px;
+    height: 231px;
+  }
+
+  .card__title {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    color: @lightblack;
+    text-transform: uppercase;
+    margin: 0 0 21px 0;
+    padding-bottom: 18px;
+  }
+
+  .card__description-list {
+    display: grid;
+    width: 180px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .card__description {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    color: @darkgrey;
+    margin: 0;
+    padding: 8px 0;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .card__explication {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: right;
+    color: @darkgrey;
+    margin: 0;
+    padding: 7px 0;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .card__button {
+    margin-bottom: 40px;
+    color: @white;
+    width: 100%;
+  }
+
+  .card-more {
+    width: 245px;
+    height: 512px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: @white;
+  }
+
+  .card-more__wrapper {
+    background-color: @white;
+    border: 1px solid #cdcdcd;
+    width: 245px;
+    height: 431px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-more__cards-plus {
+    margin: 51px auto 49px auto;
+    width: 60px;
+    height: 60px;
+  }
+
+  .card-more__cards-show {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+    color: @lightblack;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+    width: 136px;
+  }
+
+  .card-more__cards-description {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: @darkgrey;
+    margin-bottom: 87px;
+    width: 170px;
+  }
+
+  .card__button--more {
+    background-color: #f2f2f2;
+    color: @darkgrey;
+    margin-bottom: 21px;
+    width: 169px;
+  }
 }
