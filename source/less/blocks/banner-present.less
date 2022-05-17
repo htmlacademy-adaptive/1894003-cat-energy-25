@@ -1,10 +1,65 @@
-.banner-present {
-  background-image: url("../img/gift.jpg");
-  background-color: @basicgreen;
-  background-repeat: no-repeat;
-  color: @white;
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
+@media (min-width: @mobile-width) {
+  .banner-present {
+    background-image: url("../img/gift.jpg");
+    background-color: @basicgreen;
+    background-repeat: no-repeat;
+    width: 280px;
+    height: 290px;
+    margin: 0 auto 35px auto;
+    padding: 186px 0 43px 0;
+    box-sizing: border-box;
+  }
+
+  .banner-present__text {
+    color: @white;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    width: 280px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .banner-present {
+    background-image: url("../img/gift-tablet.jpg");
+    background-color: @basicgreen;
+    background-repeat: no-repeat;
+    width: 708px;
+    height: 200px;
+    margin: 0 auto 76px auto;
+    padding: 71px 0 69px 442px;
+    box-sizing: border-box;
+  }
+
+  .banner-present__text {
+    color: @white;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    width: 280px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .banner-present {
+    background-image: url("../img/gift.jpg");
+    background-color: @basicgreen;
+    background-repeat: no-repeat;
+    width: 245px;
+    height: 288px;
+    margin: 0;
+    padding: 186px 0 43px 0;
+    box-sizing: border-box;
+  }
+
+  .banner-present__text {
+    color: @white;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    width: 280px;
+  }
 }
