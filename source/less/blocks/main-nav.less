@@ -10,8 +10,8 @@
 
 .main-nav__link {
   text-decoration: none;
-  color: #000000;
 }
+
 
 @media (min-width: @mobile-width) {
   .main-nav {
@@ -33,6 +33,20 @@
 
   .main-nav__link {
     margin: 0 auto;
+    color: #000000;
+
+    &:hover {
+      color: fade(#000000, 60%);
+    }
+
+    &:active {
+      color: fade(#000000, 30%);
+    }
+
+    &--active {
+      border-bottom: 2px solid @darkgreen;
+      padding-bottom: 10px;
+    }
   }
 }
 
@@ -57,6 +71,20 @@
 
   .main-nav__link {
     margin-left: 35px;
+    color: #000000;
+
+    &:hover {
+      color: fade(#000000, 60%);
+    }
+
+    &:active {
+      color: fade(#000000, 30%);
+    }
+
+    &--active {
+      border-bottom: 2px solid @darkgreen;
+      padding-bottom: 10px;
+    }
   }
 }
 
@@ -75,7 +103,6 @@
   .main-nav__link {
     font-size: 20px;
     line-height: 26px;
-    /*color: @white;*/
     text-transform: uppercase;
     text-align: right;
   }
@@ -86,5 +113,39 @@
 
   .main-nav__item {
     border: none;
+  }
+
+  .main-nav__link--catalog {
+    color: #000000;
+
+    &:hover {
+      color: fade(#000000, 60%);
+    }
+
+    &:active {
+      color: fade(#000000, 30%);
+    }
+
+    &--active {
+      border-bottom: 2px solid @darkgreen;
+      padding-bottom: 10px;
+    }
+  }
+
+  .main-nav__link--index {
+    color: @white;
+
+    &:hover {
+      color: fade(@white, 60%);
+    }
+
+    &:active {
+      color: fade(@white, 30%);
+    }
+
+    &--active {
+      border-bottom: 2px solid @white;
+      padding-bottom: 10px;
+    }
   }
 }

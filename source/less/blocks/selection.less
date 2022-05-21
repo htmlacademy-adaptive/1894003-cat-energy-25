@@ -5,6 +5,45 @@
   padding: 0;
 }
 
+.weight-selection__input:checked + .weight-selection__radio-round::before {
+  .weight-selection__input:hover + .weight-selection__radio-round::before {
+    background-color: @darkgreen;
+  }
+
+  .weight-selection__input:hover {
+    border: 1px solid #bababa;
+  }
+
+  .weight-selection__input:active + .weight-selection__radio-round::before {
+    background-color: @darkgreen;
+  }
+
+  .weight-selection__input:active {
+    border: 1px solid fade(#bababa, 30%);
+  }
+}
+
+.weight-selection__label {
+  &:active {
+    color: fade(#bababa, 30%);
+  }
+}
+
+.questionary__input,
+.contacts-data__input {
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    border: 1px solid #000000;
+  }
+
+  &:disabled {
+    border: 1px solid #ff8282;
+  }
+}
+
 @media (min-width: @mobile-width) {
   .form-title {
     width: 280px;
@@ -81,6 +120,13 @@
     padding: 5px 0 0 15px;
     box-sizing: border-box;
     min-width: 170px;
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    text-transform: uppercase;
+    color: @darkgrey;
   }
 
   .questionary__input::-webkit-input-placeholder {
@@ -159,17 +205,13 @@
 
   /*контактные данные*/
   .contacts-data__wrapper {
-    width: 280px;
-    margin: 0 auto 29px auto;
+    width: 100%;
+    margin: 0 0 29px 0;
   }
 
-  .contacts-data__title {
-    font-family: "Oswald", sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 26px;
-    text-align: left;
-    margin: 29px 0 39px 0;
+  .contacts-data__title-wrapper {
+    width: 280px;
+    margin: 29px auto 39px auto;
   }
 
   .contacts-data__block {
@@ -198,6 +240,13 @@
     padding: 5px 0 0 15px;
     box-sizing: border-box;
     min-width: 170px;
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    text-transform: uppercase;
+    color: @darkgrey;
   }
 
   .contacts-data__input::-webkit-input-placeholder {
@@ -227,18 +276,14 @@
     border: none;
   }
 
+  .comment-data__title-wrapper {
+    max-width: 280px;
+    margin: 29px auto 39px auto;
+  }
+
   .comment-data__wrapper {
     width: 280px;
     margin: 0 auto;
-  }
-
-  .comment-data__title {
-    font-family: "Oswald", sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 26px;
-    text-align: left;
-    margin: 29px 0 39px 0;
   }
 
   .comment-data__input {
@@ -248,6 +293,13 @@
     width: 100%;
     padding-top: 7px;
     margin: 0;
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    text-transform: uppercase;
+    color: @darkgrey;
   }
 
   .comment-data__input::-webkit-input-placeholder {
@@ -275,20 +327,44 @@
   /*дополнительно*/
   .addition-data {
     border: none;
+    width: 100%;
   }
 
-  .addition-data__wrapper {
-    width: 280px;
-    margin: 0 auto 34px auto;
+  .title-line {
+    position: relative;
   }
 
-  .addition-data__title {
+  .title-line::before {
+    position: absolute;
+    width: 100%;
+    content: "";
+    top: 50%;
+    height: 2px;
+    background-color: @basicgreen;
+    z-index: -1;
+  }
+
+  .selection-title {
     font-family: "Oswald", sans-serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 26px;
     text-align: left;
-    margin: 29px 0 30px 0;
+    margin: 0;
+    padding: 0 23px;
+    display: inline-block;
+    background-color: @white;
+    margin-left: -23px;
+  }
+
+  .addition-data__wrapper {
+    width: 100%;
+    margin: 0 0 34px 0;
+  }
+
+  .addition-data__title-wrapper {
+    max-width: 280px;
+    margin: 29px auto 39px auto;
   }
 
   .addition-data__list {
@@ -431,6 +507,13 @@
     border: 1px solid @lightgrey;
     padding: 7px 0 0 18px;
     box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    text-transform: uppercase;
+    color: @darkgrey;
   }
 
   .questionary__input::-webkit-input-placeholder {
@@ -515,17 +598,13 @@
 
   /*контактные данные*/
   .contacts-data__wrapper {
-    width: 708px;
+    width: 100%;
     margin: 0 auto 65px auto;
   }
 
-  .contacts-data__title {
-    font-family: "Oswald", sans-serif;
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 36px;
-    text-align: left;
-    margin: 0 0 76px 0;
+  .contacts-data__title-wrapper {
+    width: 708px;
+    margin: 0 auto 79px auto;
   }
 
   .contacts-data__block {
@@ -553,6 +632,13 @@
     border: 1px solid @lightgrey;
     padding: 7px 0 0 18px;
     box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    text-transform: uppercase;
+    color: @darkgrey;
   }
 
   .contacts-data__input::-webkit-input-placeholder {
@@ -578,18 +664,45 @@
   }
 
   /*комментарии*/
+  .comment-data {
+    width: 100%;
+  }
+
   .comment-data__wrapper {
     width: 708px;
     margin: 0 auto;
   }
 
-  .comment-data__title {
+  .title-line {
+    position: relative;
+  }
+
+  .title-line::before {
+    position: absolute;
+    width: 100%;
+    content: "";
+    top: 50%;
+    height: 2px;
+    background-color: @basicgreen;
+    z-index: -1;
+  }
+
+  .comment-data__title-wrapper {
+    max-width: 708px;
+    margin: 0 auto 76px auto;
+  }
+
+  .selection-title {
     font-family: "Oswald", sans-serif;
     font-size: 36px;
     font-weight: 400;
     line-height: 36px;
     text-align: left;
-    margin: 0 0 76px 0;
+    margin: 0;
+    padding: 0 38px;
+    display: inline-block;
+    background-color: @white;
+    margin-left: -38px;
   }
 
   .comment-data__input {
@@ -599,6 +712,13 @@
     box-sizing: border-box;
     width: 100%;
     padding: 12px 13px;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    text-transform: uppercase;
+    color: @darkgrey;
   }
 
   .comment-data__input::-webkit-input-placeholder {
@@ -625,22 +745,18 @@
 
   /*дополнительно*/
   .addition-data {
+    width: 100%;
     border: none;
     margin-bottom: 54px;
   }
 
   .addition-data__wrapper {
-    width: 708px;
-    margin: 0 auto;
+    width: 100%;
   }
 
-  .addition-data__title {
-    font-family: "Oswald", sans-serif;
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 36px;
-    text-align: left;
-    margin: 0 0 76px 0;
+  .addition-data__title-wrapper {
+    max-width: 708px;
+    margin: 0 auto 79px auto;
   }
 
   .addition-data__list {
@@ -802,6 +918,13 @@
     border: 1px solid @lightgrey;
     padding: 7px 0 0 18px;
     box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    text-transform: uppercase;
+    color: @darkgrey;
   }
 
   .questionary__input::-webkit-input-placeholder {
@@ -887,24 +1010,20 @@
 
   /*контактные данные*/
   .contacts-data {
-    width: 1220px;
+    width: 100%;
     padding: 0;
     margin: 0 auto;
     border: none;
   }
 
   .contacts-data__wrapper {
-    width: 1220px;
+    width: 100%;
     margin: 0 auto 69px auto;
   }
 
-  .contacts-data__title {
-    font-family: "Oswald", sans-serif;
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 36px;
-    text-align: left;
-    margin: 0 0 76px 0;
+  .contacts-data__title-wrapper {
+    width: 1220px;
+    margin: 0 auto 79px auto;
   }
 
   .contacts-data__wrapper-small {
@@ -939,6 +1058,13 @@
     border: 1px solid @lightgrey;
     padding: 7px 0 0 18px;
     box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    text-transform: uppercase;
+    color: @darkgrey;
   }
 
   .contacts-data__input::-webkit-input-placeholder {
@@ -964,18 +1090,45 @@
   }
 
   /*комментарии*/
-  .comment-data__wrapper {
-    width: 1220px;
-    margin: 0 auto;
+  .comment-data {
+    width: 100%;
   }
 
-  .comment-data__title {
+  .comment-data__wrapper {
+    width: 1220px;
+    margin: 0 auto 69px auto;
+  }
+
+  .title-line {
+    position: relative;
+  }
+
+  .title-line::before {
+    position: absolute;
+    width: 100%;
+    content: "";
+    top: 50%;
+    height: 2px;
+    background-color: @basicgreen;
+    z-index: -1;
+  }
+
+  .comment-data__title-wrapper {
+    max-width: 1220px;
+    margin: 0 auto 76px auto;
+  }
+
+  .selection-title {
     font-family: "Oswald", sans-serif;
     font-size: 36px;
     font-weight: 400;
     line-height: 36px;
     text-align: left;
-    margin: 0 0 76px 0;
+    margin: 0;
+    padding: 0 38px;
+    display: inline-block;
+    background-color: @white;
+    margin-left: -38px;
   }
 
   .comment-data__input {
@@ -1011,22 +1164,18 @@
 
   /*дополнительно*/
   .addition-data {
+    width: 100%;
     border: none;
     margin-bottom: 82px;
   }
 
-  .addition-data__wrapper {
-    width: 1220px;
-    margin: 0 auto;
+  .addition-data__title-wrapper {
+    max-width: 1220px;
+    margin: 0 auto 79px auto;
   }
 
-  .addition-data__title {
-    font-family: "Oswald", sans-serif;
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 36px;
-    text-align: left;
-    margin: 0 0 57px 0;
+  .addition-data__wrapper {
+    width: 100%;
   }
 
   .addition-data__list {
