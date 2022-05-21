@@ -90,22 +90,27 @@
     grid-template-rows: 227px 227px;
     row-gap: 90px;
     margin-bottom: 47px;
+    counter-reset: advantages-counter;
   }
 
   .advantages__item--benefit {
-    background: url("../img/benefit-tablet.svg") left top no-repeat;
+    background: url("../img/benefit.svg") left top no-repeat;
+    background-size: 80px 80px;
   }
 
   .advantages__item--powder {
-    background: url("../img/powder-tablet.svg") left top no-repeat;
+    background: url("../img/powder.svg") left top no-repeat;
+    background-size: 80px 80px;
   }
 
   .advantages__item--functional-food {
-    background: url("../img/functional-food-tablet.svg") left top no-repeat;
+    background: url("../img/functional-food.svg") left top no-repeat;
+    background-size: 80px 80px;
   }
 
   .advantages__item--time {
-    background: url("../img/time-tablet.svg") left top no-repeat;
+    background: url("../img/time.svg") left top no-repeat;
+    background-size: 80px 80px;
   }
 
   .advantages__item {
@@ -113,6 +118,20 @@
     padding-left: 0;
     width: 234px;
     height: 232px;
+    counter-increment: advantages-counter;
+    position: relative;
+  }
+
+  .advantages__item::after {
+    content: counter(advantages-counter);
+    font-family: "Oswald", sans-serif;
+    width: 120px;
+    position: absolute;
+    font-size: 280px;
+    color: #f2f2f2;
+    z-index: -1;
+    top: 100px;
+    right: -8px;
   }
 
   .advantages__item-span {
@@ -144,27 +163,48 @@
     display: flex;
     justify-content: space-between;
     width: 1220px;
+    counter-reset: advantages-counter;
   }
 
   .advantages__item--benefit {
-    background: url("../img/benefit-tablet.svg") left top no-repeat;
+    background: url("../img/benefit.svg") left top no-repeat;
+    background-size: 80px 80px;
   }
 
   .advantages__item--powder {
-    background: url("../img/powder-tablet.svg") left top no-repeat;
+    background: url("../img/powder.svg") left top no-repeat;
+    background-size: 80px 80px;
   }
 
   .advantages__item--functional-food {
-    background: url("../img/functional-food-tablet.svg") left top no-repeat;
+    background: url("../img/functional-food.svg") left top no-repeat;
+    background-size: 80px 80px;
   }
 
   .advantages__item--time {
-    background-image: url("../img/time-tablet.svg") left top no-repeat;
+    background: url("../img/time.svg") left top no-repeat;
+    background-size: 80px 80px;
   }
 
   .advantages__item {
-    width: 250px;
-    padding-bottom: 44px;
+    padding-top: 112px;
+    padding-left: 0;
+    width: 234px;
+    height: 232px;
+    counter-increment: advantages-counter;
+    position: relative;
+  }
+
+  .advantages__item::after {
+    content: counter(advantages-counter);
+    font-family: "Oswald", sans-serif;
+    width: 120px;
+    position: absolute;
+    font-size: 280px;
+    color: #f2f2f2;
+    z-index: -1;
+    top: 100px;
+    right: -8px;
   }
 
   .advantages__item-span {

@@ -1,0 +1,75 @@
+.card__button {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  flex-grow: 1;
+  cursor: pointer;
+  background-color: @basicgreen;
+  width: 100%;
+
+  &:hover {
+    background-color: @darkgreen;
+  }
+
+  &:active {
+    background-color: @darkgreen;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.button-big {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  flex-grow: 1;
+  cursor: pointer;
+  background-color: @basicgreen;
+  width: 100%;
+
+  &:hover {
+    background-color: @darkgreen;
+  }
+
+  &:active {
+    background-color: @darkgreen;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media (min-width: @mobile-width) {
+    font-size: 14px;
+    line-height: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+.button--grey {
+  background-color: #f2f2f2;
+  color: @darkgrey;
+
+  &:hover {
+    background-color: @middlegrey;
+  }
+
+  &:active {
+    color: fade(@darkgrey, 30%);
+  }
+}
