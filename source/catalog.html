@@ -12,7 +12,7 @@
 
         <nav class="main-nav-logos">
 
-          <a class="class="main-nav-logos__logo" href="index.html"">
+          <a class="main-nav-logos__logo" href="index.html">
             <picture>
               <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="202" height="59">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="52">
@@ -40,12 +40,12 @@
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link main-nav__link--catalog main-nav__link--catalog--active" href="catalog.html">
-                Каталог&nbspпродукции
+                Каталог&nbsp;продукции
               </a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link main-nav__link--catalog" href="form.html">
-                Подбор&nbspпрограммы
+                Подбор&nbsp;программы
               </a>
             </li>
           </ul>
@@ -61,18 +61,25 @@
 
       <section class="catalog-cards">
         <h2 class="visually-hidden">Каталог</h2>
-        <ul class="catalog__cards-list">
+        <ul class="catalog-cards__cards-list">
 
           <!--Карточка 1-->
-          <li class="catalog__cards-item">
+          <li class="catalog-cards__cards-item">
 
             <section class="card">
               <div class="card__wrapper">
                 <h3 class="card__title">
-                  <a class="card__title-link title-link" href="#">Cat Energy<br>PRO 500 г</a>
+                  <a class="card__title-link title-link" href="#">Cat Energy<br> PRO 500&nbsp;г</a>
                 </h3>
                 <a class="card__image-wrapper" href="#">
-                  <img class="card__image" src="img/catalog-1.png" alt="Cat Energy PRO 500 г" width="140" height="112">
+                  <!--<img class="card__image" src="img/catalog-1.png" alt="Cat Energy PRO 500 г" width="140" height="112">-->
+
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/catalog-1-desktop.png 1x, img/catalog-1-desktop@2x.png 2x" width="172" height="196">
+                    <source media="(min-width: 768px)" srcset="img/catalog-1-tablet.png 1x, catalog-1-tablet@2x.png 2x" width="168" height="200">
+                    <img class="card__image" src="img/catalog-1-mobile.png" srcset="img/catalog-1-mobile@2x.png 2x"
+                        alt="Cat Energy PRO 1000 г." width="140" height="112">
+                  </picture>
                 </a>
                 <dl class="card__description-list">
                   <dt class="card__description">
@@ -96,7 +103,7 @@
                 </dl>
               </div>
 
-              <div class="card__button">
+              <div class="card-button">
                 <a class="button">Заказать</a>
               </div>
             </section>
@@ -104,15 +111,22 @@
           </li>
 
           <!--Карточка 2-->
-          <li class="catalog__cards-item">
+          <li class="catalog-cards__cards-item">
 
             <section class="card">
               <div class="card__wrapper">
                 <h3 class="card__title">
-                  <a class="card__title-link title-link" href="#">Cat Energy<br>PRO 1000 г</a>
+                  <a class="card__title-link title-link" href="#">Cat Energy<br> PRO 1000&nbsp;г</a>
                 </h3>
                 <a class="card__image-wrapper" href="#">
-                  <img class="card__image" src="img/catalog-2.png" alt="Cat Energy PRO 1000 г" width="140" height="112">
+
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/catalog-2-desktop.png 1x, img/catalog-2-desktop@2x.png 2x" width="172" height="196">
+                    <source media="(min-width: 768px)" srcset="img/catalog-2-tablet.png 1x, catalog-2-tablet@2x.png 2x" width="168" height="200">
+                    <img class="card__image" src="img/catalog-2-mobile.png" srcset="img/catalog-2-mobile@2x.png 2x"
+                        alt="Cat Energy PRO 1000 г." width="140" height="112">
+                  </picture>
+
                 </a>
                 <dl class="card__description-list">
                   <dt class="card__description">
@@ -137,7 +151,7 @@
 
               </div>
 
-              <div class="card__button">
+              <div class="card-button">
                 <a class="button">Заказать</a>
               </div>
             </section>
@@ -145,15 +159,20 @@
           </li>
 
           <!--Карточка 3-->
-          <li class="catalog__cards-item">
+          <li class="catalog-cards__cards-item">
 
             <section class="card">
               <div class="card__wrapper">
                 <h3 class="card__title">
-                  <a class="card__title-link title-link" href="#">Cat Energy<br>PRO 500 г
+                  <a class="card__title-link title-link" href="#">Cat Energy<br> PRO 500&nbsp;г</a>
                 </h3>
                 <a class="card__image-wrapper" href="#">
-                  <img class="card__image" src="img/catalog-3.png" alt="Cat Energy PRO 500 г" width="140" height="112">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/catalog-3-desktop.png 1x, img/catalog-3-desktop@2x.png 2x" width="172" height="196">
+                    <source media="(min-width: 768px)" srcset="img/catalog-3-tablet.png 1x, catalog-3-tablet@2x.png 2x" width="168" height="200">
+                    <img class="card__image" src="img/catalog-3-mobile.png" srcset="img/catalog-3-mobile@2x.png 2x"
+                        alt="Cat Energy PRO 500 г." width="140" height="112">
+                  </picture>
                 </a>
                 <dl class="card__description-list">
                   <dt class="card__description">
@@ -177,7 +196,7 @@
                 </dl>
               </div>
 
-              <div class="card__button">
+              <div class="card-button">
                 <a class="button">Заказать</a>
               </div>
             </section>
@@ -185,15 +204,21 @@
           </li>
 
           <!--Карточка 4-->
-          <li class="catalog__cards-item">
+          <li class="catalog-cards__cards-item">
 
             <section class="card">
               <div class="card__wrapper">
                 <h3 class="card__title">
-                  <a class="card__title-link title-link" href="#">Cat Energy<br>PRO 1000 г
+                  <a class="card__title-link title-link" href="#">Cat Energy<br> PRO 1000&nbsp;г</a>
                 </h3>
                 <a class="card__image-wrapper" href="#">
-                  <img class="card__image" src="img/catalog-4.png" alt="Cat Energy PRO 1000 г" width="140" height="112">
+
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/catalog-4-desktop.png 1x, img/catalog-4-desktop@2x.png 2x" width="172" height="196">
+                    <source media="(min-width: 768px)" srcset="img/catalog-4-tablet.png 1x, catalog-4-tablet@2x.png 2x" width="168" height="200">
+                    <img class="card__image" src="img/catalog-4-mobile.png" srcset="img/catalog-4-mobile@2x.png 2x"
+                        alt="Cat Energy PRO 1000 г." width="140" height="112">
+                  </picture>
                 </a>
                 <dl class="card__description-list">
                   <dt class="card__description">
@@ -217,7 +242,7 @@
                 </dl>
               </div>
 
-              <div class="card__button">
+              <div class="card-button">
                 <a class="button">Заказать</a>
               </div>
             </section>
@@ -225,15 +250,20 @@
           </li>
 
           <!--Карточка 5-->
-          <li class="catalog__cards-item">
+          <li class="catalog-cards__cards-item">
 
             <section class="card">
               <div class="card__wrapper">
                 <h3 class="card__title">
-                  <a class="card__title-link title-link" href="#">Cat Energy<br>PRO 500 г</a>
+                  <a class="card__title-link title-link" href="#">Cat Energy<br> PRO 500&nbsp;г</a>
                 </h3>
                 <a class="card__image-wrapper" href="#">
-                  <img class="card__image" src="img/catalog-5.png" alt="Cat Energy PRO 500 г" width="140" height="112">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/catalog-5-desktop.png 1x, img/catalog-5-desktop@2x.png 2x" width="172" height="196">
+                    <source media="(min-width: 768px)" srcset="img/catalog-5-tablet.png 1x, catalog-5-tablet@2x.png 2x" width="168" height="200">
+                    <img class="card__image" src="img/catalog-5-mobile.png" srcset="img/catalog-5-mobile@2x.png 2x"
+                        alt="Cat Energy PRO 500 г." width="140" height="112">
+                  </picture>
                 </a>
                 <dl class="card__description-list">
                   <dt class="card__description">
@@ -257,7 +287,7 @@
                 </dl>
               </div>
 
-              <div class="card__button">
+              <div class="card-button">
                 <a class="button">Заказать</a>
               </div>
             </section>
@@ -265,15 +295,20 @@
           </li>
 
           <!--Карточка 6-->
-          <li class="catalog__cards-item">
+          <li class="catalog-cards__cards-item">
 
             <section class="card">
               <div class="card__wrapper">
                 <h3 class="card__title">
-                  <a class="card__title-link title-link" href="#">Cat Energy<br>PRO 1000 г</a>
+                  <a class="card__title-link title-link" href="#">Cat Energy<br> PRO 1000&nbsp;г</a>
                 </h3>
                 <a class="card__image-wrapper" href="#">
-                  <img class="card__image" src="img/catalog-6.png" alt="Cat Energy PRO 1000 г" width="140" height="112">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/catalog-6-desktop.png 1x, img/catalog-6-desktop@2x.png 2x" width="172" height="196">
+                    <source media="(min-width: 768px)" srcset="img/catalog-6-tablet.png 1x, catalog-6-tablet@2x.png 2x" width="168" height="200">
+                    <img class="card__image" src="img/catalog-6-mobile.png" srcset="img/catalog-6-mobile@2x.png 2x"
+                        alt="Cat Energy PRO 1000 г." width="140" height="112">
+                  </picture>
                 </a>
                 <dl class="card__description-list">
                   <dt class="card__description">
@@ -297,7 +332,7 @@
                 </dl>
               </div>
 
-              <div class="card__button">
+              <div class="card-button">
                 <a class="button">Заказать</a>
               </div>
             </section>
@@ -305,15 +340,20 @@
           </li>
 
           <!--Карточка 7-->
-          <li class="catalog__cards-item">
+          <li class="catalog-cards__cards-item">
 
             <section class="card">
               <div class="card__wrapper">
                 <h3 class="card__title">
-                  <a class="card__title-link title-link" href="#">Cat Energy<br>PRO 500 г</a>
+                  <a class="card__title-link title-link" href="#">Cat Energy<br> PRO 500&nbsp;г</a>
                 </h3>
                 <a class="card__image-wrapper" href="#">
-                  <img class="card__image" src="img/catalog-7.png" alt="Cat Energy PRO 500 г" width="140" height="112">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/catalog-7-desktop.png 1x, img/catalog-7-desktop@2x.png 2x" width="172" height="196">
+                    <source media="(min-width: 768px)" srcset="img/catalog-7-tablet.png 1x, catalog-7-tablet@2x.png 2x" width="168" height="200">
+                    <img class="card__image" src="img/catalog-7-mobile.png" srcset="img/catalog-7-mobile@2x.png 2x"
+                        alt="Cat Energy PRO 1000 г." width="140" height="112">
+                  </picture>
                 </a>
                 <dl class="card__description-list">
                   <dt class="card__description">
@@ -337,14 +377,14 @@
                 </dl>
               </div>
 
-              <div class="card__button">
+              <div class="card-button">
                 <a class="button">Заказать</a>
               </div>
             </section>
 
           </li>
 
-          <li class="catalog__cards-item">
+          <li class="catalog-cards__cards-item">
 
             <div class="card-more">
               <div class="card-more__wrapper">
@@ -352,7 +392,7 @@
                 <p class="card-more__cards-show">Показать еще 100500 товаров</p>
                 <p class="card-more__cards-description">На самом деле вкусов гораздо больше!</p>
 
-                <div class="card__button card__button--more">
+                <div class="card-button card-more__button">
                   <a class="button button--grey">Показать всё</a>
                 </div>
               </div>
@@ -362,12 +402,12 @@
 
       </section>
 
-      <div class="additional-cards__title-container">
-        <h2 class="additional-cards__title">Дополнительные товары</h2>
+      <div class="additional-cards-title">
+        <h2 class="additional-cards-title__title">Дополнительные товары</h2>
       </div>
 
-      <div class="card-present__container">
-        <section class="additional-cards">
+      <section class="additional-cards">
+        <div class="additional-cards__container">
           <h2 class="visually-hidden">Дополнительные товары</h2>
           <ul class="additional-cards__list">
 
@@ -391,7 +431,7 @@
                   </dl>
                 </div>
 
-                <div class="card__button card__button--additional">
+                <div class="card-button card-button--additional">
                   <a class="button">Заказать</a>
                 </div>
               </section>
@@ -418,7 +458,7 @@
                   </dl>
                 </div>
 
-                <div class="card__button card__button--additional">
+                <div class="card-button card-button--additional">
                   <a class="button">Заказать</a>
                 </div>
               </section>
@@ -445,7 +485,7 @@
                   </dl>
                 </div>
 
-                <div class="card__button card__button--additional">
+                <div class="card-button card-button--additional">
                   <a class="button">Заказать</a>
                 </div>
               </section>
@@ -472,24 +512,24 @@
                   </dl>
                 </div>
 
-                <div class="card__button card__button--additional">
+                <div class="card-button card-button--additional">
                   <a class="button">Заказать</a>
                 </div>
               </section>
 
             </li>
           </ul>
-        </section>
+        </div>
 
         <section class="banner-present">
           <h2 class="visually-hidden">Как получить подарок?</h2>
             <p class="banner-present__text">
               Закажите всё<br>
-              и получите чехол для<br>
+              и&nbsp;получите чехол для<br>
               кота в подарок!</p>
 
         </section>
-      </div>
+      </section>
     </main>
 
     <footer class="main-footer">
@@ -507,7 +547,7 @@
               <dd class="map__invitation-adress">
                   <p class="map__invitation-adress-text">
                     ул. Большая<br>
-                    Конюшенная, д.&nbsp19/8
+                    Конюшенная, д.&nbsp;19/8
                   </p>
                   <p class="map__invitation-adress-text">
                     Санкт-Петербург
@@ -518,7 +558,12 @@
         </div>
 
         <div class="map__wrapper">
-          <img class="map__image" src="img/map-pin.svg" alt="Карта" width="57" height="54">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x" width="1440" height="400">
+            <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x" width="768" height="400">
+            <img class="map__image" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x"
+                alt="Карта." width="320" height="362">
+          </picture>
         </div>
       </section>
 
@@ -533,7 +578,7 @@
             </a>
           </div>
 
-          <div class="contacts__social-socials">
+          <div class="contacts__social socials">
             <ul  class="socials__social-list">
               <li  class="socials__social-item">
                 <a class="socials__social-link" href="#">
@@ -559,7 +604,7 @@
 
 
           <a class="contacts__htmlacademy">
-            <span class="htmlacademy__letters">HTML Academy</span>
+            <span class="contacts__htmlacademy-letters">HTML Academy</span>
             <svg class="contacts__htmlacademy-svg" width="27" height="34" xmlns="http://www.w3.org/2000/svg"><path d="M13.64.02 13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0Zm11.6 25L13.5 31.96 1.77 25.02v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26Zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.63-6.96 11.8 6.83Zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24Z"/></svg>
           </a>
 
@@ -567,6 +612,8 @@
       </section>
 
     </footer>
+
+    <script src="./js/script.js"></script>
 
   </body>
 </html>

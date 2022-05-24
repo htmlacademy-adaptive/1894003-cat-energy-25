@@ -12,7 +12,7 @@
 
         <nav class="main-nav-logos">
 
-          <a class="class="main-nav-logos__logo" href="index.html"">
+          <a class="main-nav-logos__logo" href="index.html">
             <picture>
               <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="202" height="59">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="52">
@@ -31,21 +31,21 @@
           </button>
         </nav>
 
-        <nav class="main-nav main-header--opened">
+        <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--catalog href="index.html">
+              <a class="main-nav__link main-nav__link--catalog" href="index.html">
                 Главная
               </a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link main-nav__link--catalog" href="catalog.html">
-                Каталог&nbspпродукции
+                Каталог&nbsp;продукции
               </a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link main-nav__link--catalog main-nav__link--catalog--active" href="form.html">
-                Подбор&nbspпрограммы
+                Подбор&nbsp;программы
               </a>
             </li>
           </ul>
@@ -63,7 +63,7 @@
         <h2 class="visually-hidden">Анкета для подбора питания для кота</h2>
         <form class="selection__form" action="#" method="get">
 
-          <div class="questionary-weight__container">
+          <div class="selection__form-container">
             <fieldset class="selection__card questionary">
               <div class="questionary__wrapper">
                 <h3 class="questionary__title">Заполните анкету, и мы подберем<br>
@@ -76,12 +76,12 @@
                 </div>
 
                 <div class="questionary__container">
-                  <label class="questionary__label" for="questionary__weight">Вес&nbsp(кг):*</label>
+                  <label class="questionary__label" for="questionary__weight">Вес&nbsp;(кг):*</label>
                   <input class="questionary__input" id="questionary__weight" type="text" placeholder="7" name="weight" required>
                 </div>
 
                 <div class="questionary__container">
-                  <label class="questionary__label" for="questionary__age">Возраст&nbsp(лет):</label>
+                  <label class="questionary__label" for="questionary__age">Возраст&nbsp;(лет):</label>
                   <input class="questionary__input" id="questionary__age" type="text" placeholder="7" name="age" required>
                 </div>
 
@@ -145,7 +145,7 @@
 
             <div class="comment-data__wrapper">
               <label class="comment-data__label">
-                <textarea class="comment-data__input" type="text" placeholder="Расскажите обо всех повадках кота" name="comment"></textarea>
+                <textarea class="comment-data__input" placeholder="Расскажите обо всех повадках кота" name="comment"></textarea>
               </label>
             </div>
           </fieldset>
@@ -185,13 +185,13 @@
 
           </fieldset>
 
-          <div class="button-note__container">
-            <div class="card__button selection-button">
+          <div class="selection__form-button-container">
+            <div class="card-button selection-button">
               <button class="button" type="submit">Отправить заявку</button>
             </div>
 
-            <div class="selection-card__note-container">
-              <span class="selection-card__note">* — Обязательные поля</span>
+            <div class="selection__form-note-container">
+              <span class="selection__form-note">* — Обязательные поля</span>
             </div>
           </div>
 
@@ -217,7 +217,7 @@
               <dd class="map__invitation-adress">
                   <p class="map__invitation-adress-text">
                     ул. Большая<br>
-                    Конюшенная, д.&nbsp19/8
+                    Конюшенная, д.&nbsp;19/8
                   </p>
                   <p class="map__invitation-adress-text">
                     Санкт-Петербург
@@ -228,7 +228,12 @@
         </div>
 
         <div class="map__wrapper">
-          <img class="map__image" src="../img/map-pin.svg" alt="Карта" width="57" height="54">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x" width="1440" height="400">
+            <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x" width="768" height="400">
+            <img class="map__image" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x"
+                alt="Карта." width="320" height="362">
+          </picture>
         </div>
       </section>
 
@@ -243,7 +248,7 @@
             </a>
           </div>
 
-          <div class="contacts__social-socials">
+          <div class="contacts__social socials">
             <ul  class="socials__social-list">
               <li  class="socials__social-item">
                 <a class="socials__social-link" href="#">
@@ -269,7 +274,7 @@
 
 
           <a class="contacts__htmlacademy">
-            <span class="htmlacademy__letters">HTML Academy</span>
+            <span class="contacts__htmlacademy-letters">HTML Academy</span>
             <svg class="contacts__htmlacademy-svg" width="27" height="34" xmlns="http://www.w3.org/2000/svg"><path d="M13.64.02 13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0Zm11.6 25L13.5 31.96 1.77 25.02v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26Zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.63-6.96 11.8 6.83Zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24Z"/></svg>
           </a>
 
@@ -277,5 +282,8 @@
       </section>
 
     </footer>
+
+    <script src="./js/script.js"></script>
+
   </body>
 </html>
