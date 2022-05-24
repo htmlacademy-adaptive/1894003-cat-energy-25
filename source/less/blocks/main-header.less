@@ -2,10 +2,9 @@
   width: 100%;
 }
 
-@media (min-width: @mobile-width) {
-  .main-header__wrapper {
-    width: 100%;
-    margin: 0 auto;
+@media (max-width: 767px) {
+  .main-header--closed .main-nav {
+    display: none;
   }
 
   .main-header__close {
@@ -23,9 +22,12 @@
   .main-header--closed .main-header__close {
     display: none;
   }
+}
 
-  .main-header--closed .main-nav {
-    display: none;
+@media (min-width: @mobile-width) {
+  .main-header__wrapper {
+    width: 100%;
+    margin: 0 auto;
   }
 }
 

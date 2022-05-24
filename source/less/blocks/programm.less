@@ -7,7 +7,15 @@
   .programm {
     text-align: center;
     color: @white;
-    background-image: url("../img/cat-green-mobile.jpg");
+    background-image: url("img/cat-green-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 1072px 302px;
+    max-width: 708px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("img/cat-green-mobile@2x.jpg");
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 1072px 302px;
@@ -92,6 +100,15 @@
     width: 100%;
     margin: -116px 0 0 0;
     background-image: url("../img/cat-green-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: auto 694px;
+    max-width: 3087px;
+    overflow: hidden;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("img/cat-green-desktop@2x.jpg");
     background-repeat: no-repeat;
     background-position: center top;
     background-size: auto 694px;
