@@ -136,6 +136,7 @@ gulp.watch('source/*.html', gulp.series(html, reload));
 export const build = gulp.series(
 clean,
 copy,
+copyImages,
 optimizeImages,
 gulp.parallel(
 styles,
