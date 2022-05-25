@@ -43,7 +43,12 @@
       color: fade(#000000, 30%);
     }
 
-    &--active {
+    &--index--active {
+      border-bottom: 2px solid @darkgreen;
+      padding-bottom: 10px;
+    }
+
+    &--catalog--active {
       border-bottom: 2px solid @darkgreen;
       padding-bottom: 10px;
     }
@@ -107,7 +112,7 @@
     text-align: right;
   }
 
-  li.main-nav__link:not:first-child {
+  li.main-nav__link:not(:first-child) {
     margin-left: 32px;
   }
 

@@ -1,0 +1,209 @@
+.weight-selection__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.weight-selection__label:hover::before {
+  border: 1px solid #bababa;
+}
+
+.weight-selection__label:active::before {
+  border: 1px solid fade(#bababa, 30%);
+}
+
+.weight-selection__label::after {
+  background-color: fade(@basicgreen, 30%);
+}
+
+.weight-selection__label {
+  &:active {
+    color: fade(#bababa, 30%);
+  }
+}
+
+@media (min-width: @mobile-width) {
+  .weight-selection__wrapper {
+    width: 280px;
+    margin: 16px auto 23px auto;
+  }
+
+  .weight-selection__list {
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  .weight-selection__item {
+    margin-bottom: 13px;
+  }
+
+  .weight-selection__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .weight-selection__label {
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    text-transform: uppercase;
+    color: @darkgrey;
+    padding: 0;
+    position: relative;
+    padding-left: 48px;
+  }
+
+  .weight-selection__label::before,
+  .weight-selection__label::after {
+    content: "";
+    position: absolute;
+  }
+
+  .weight-selection__label::before {
+    width: 30px;
+    height: 30px;
+    border: 1px solid @lightgrey;
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    margin-right: 19px;
+  }
+
+  .weight-selection__input:checked + .weight-selection__label::after {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-radius: 100%;
+    background-color: @basicgreen;
+    top: 6px;
+    left: 9px;
+    z-index: 2;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .weight-selection__wrapper {
+    width: 708px;
+    margin: 0 auto 71px auto;
+  }
+
+  .weight-selection__list {
+    width: 708px;
+    box-sizing: border-box;
+    border: 1px solid @lightgrey;
+    padding: 23px 25px 31px 27px;
+  }
+
+  .weight-selection__item {
+    margin-bottom: 27px;
+  }
+
+  .weight-selection__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .weight-selection__label {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    text-transform: uppercase;
+    color: @darkgrey;
+    padding-left: 58px;
+    position: relative;
+  }
+
+  .weight-selection__label::before,
+  .weight-selection__label::after {
+    content: "";
+    position: absolute;
+  }
+
+  .weight-selection__label::before {
+    width: 40px;
+    height: 40px;
+    border: 1px solid @lightgrey;
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    margin-right: 19px;
+  }
+
+  .weight-selection__input:checked + .weight-selection__label::after {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    background-color: @basicgreen;
+    top: 9px;
+    left: 11px;
+    z-index: 2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .weight-selection__wrapper {
+    width: 568px;
+    margin: 0;
+  }
+
+  .weight-selection__list {
+    width: 568px;
+    height: 200px;
+    box-sizing: border-box;
+    border: 1px solid @lightgrey;
+    padding: 34px 25px 29px 27px;
+  }
+
+  .weight-selection__item {
+    margin-bottom: 27px;
+  }
+
+  .weight-selection__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .weight-selection__label {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    text-transform: uppercase;
+    color: @darkgrey;
+    padding-left: 59px;
+    position: relative;
+  }
+
+  .weight-selection__label::before,
+  .weight-selection__label::after {
+    content: "";
+    position: absolute;
+  }
+
+  .weight-selection__label::before {
+    width: 40px;
+    height: 40px;
+    border: 1px solid @lightgrey;
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    margin-right: 19px;
+  }
+
+  .weight-selection__input:checked + .weight-selection__label::after {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    background-color: @basicgreen;
+    top: 9px;
+    left: 11px;
+    z-index: 2;
+  }
+}
