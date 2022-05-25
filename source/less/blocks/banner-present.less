@@ -1,13 +1,22 @@
 @media (min-width: @mobile-width) {
   .banner-present {
-    background-image: url("../img/gift.jpg");
+    background-image: url("../img/gift-mobile.jpg");
     background-color: @basicgreen;
     background-repeat: no-repeat;
     width: 280px;
     height: 290px;
     margin: 0 auto 35px auto;
     padding: 186px 0 43px 0;
-    box-sizing: border-box;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-mobile@2x.jpg");
+      background-color: @basicgreen;
+      background-repeat: no-repeat;
+      width: 280px;
+      height: 290px;
+      margin: 0 auto 35px auto;
+      padding: 186px 0 43px 0;
+    }
   }
 
   .banner-present__text {
@@ -30,6 +39,17 @@
     margin: 0 auto 76px auto;
     padding: 55px 113px 55px 408px;
     box-sizing: border-box;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-tablet@2x.jpg");
+      background-color: @basicgreen;
+      background-repeat: no-repeat;
+      width: 708px;
+      height: 200px;
+      margin: 0 auto 76px auto;
+      padding: 55px 113px 55px 408px;
+      box-sizing: border-box;
+    }
   }
 
   .banner-present__text {
@@ -44,7 +64,7 @@
 
 @media (min-width: @desktop-width) {
   .banner-present {
-    background-image: url("../img/gift.jpg");
+    background-image: url("../img/gift-desktop.jpg");
     background-color: @basicgreen;
     background-repeat: no-repeat;
     background-position-x: -15px;
@@ -53,6 +73,17 @@
     margin: 0;
     padding: 167px 39px 43px 39px;
     box-sizing: border-box;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-desktop@2x.jpg");
+      background-color: @basicgreen;
+      background-repeat: no-repeat;
+      width: 708px;
+      height: 200px;
+      margin: 0 auto 76px auto;
+      padding: 55px 113px 55px 408px;
+      box-sizing: border-box;
+    }
   }
 
   .banner-present__text {

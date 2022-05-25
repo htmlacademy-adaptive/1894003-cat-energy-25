@@ -22,6 +22,18 @@
   .main-header--closed .main-header__close {
     display: none;
   }
+
+  .main-header--nojs .main-header__toggle {
+    visibility: hidden;
+  }
+
+  .main-header--opened .main-header__close {
+    display: block;
+  }
+
+  .main-header--closed .main-header__burger {
+    display: block;
+  }
 }
 
 @media (min-width: @mobile-width) {
@@ -55,7 +67,7 @@
     justify-content: space-between;
     align-items: center;
     width: 92%;
-    max-width: 1440px;
+    max-width: 1400px;
     flex-grow: 1;
   }
 }
