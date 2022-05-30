@@ -171,10 +171,11 @@
 
               <p class="before-after__image-wrapper">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/cat-slim-fat-desktop.webp 1x, img/cat-slim-fat-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/cat-slim-fat-tablet.webp 1x, img/cat-slim-fat-tablet@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-slim-fat-tablet.webp 1x, img/cat-slim-fat-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/cat-slim-fat-mobile.webp 1x, img/cat-slim-fat-mobile@2x.webp 2x">
+                  <source type="image/webp" srcset="img/cat-slim-fat-mobile.webp 1x, img/cat-slim-fat-mobile@2x.webp 2x" width="280" height="241">
 
+                  <source media="(min-width: 1440px)" srcset="img/cat-slim-fat-tablet.png 1x, img/cat-slim-fat-tablet@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/cat-slim-fat-tablet.png 1x, img/cat-slim-fat-tablet@2x.png 2x">
                   <img class="before-after__image" src="img/cat-slim-fat-mobile.png" srcset="img/cat-slim-fat-mobile@2x.png 2x"
                   alt="Толстый/тонкий кот." width="280" height="241">
@@ -183,10 +184,10 @@
 
               <div class="before-after__button-wrapper">
 
-                <button class="before-after__range">Было</button>
+                <button type="button" class="before-after__range">Было</button>
 
                 <input class="before-after__range-input" aria-label="ползунок" type="range" min="0" max="100" value="50" name="range" step="1">
-                <button class="before-after__range">Стало</button>
+                <button type="button" class="before-after__range">Стало</button>
 
               </div>
             </div>
@@ -223,9 +224,9 @@
 
         <div class="map__wrapper">
           <picture>
-            <source type="image/webp" media="(min-width: 1440px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x" width="1440" height="400">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x" width="768" height="400">
+            <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x" width="320" height="362">
 
             <source media="(min-width: 1440px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x" width="1440" height="400">
             <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x" width="768" height="400">
