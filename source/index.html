@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
   </head>
   <body class="page__body">
+
     <header class="main-header main-header--nojs">
       <div class="main-header__wrapper">
 
@@ -66,9 +69,13 @@
 
           <p class="programm__image-wrapper">
             <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/index-cat-desktop.webp 1x, img/index-cat-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/index-cat-tablet.webp 1x, img/index-cat-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/index-cat-mobile.webp 1x, img/index-cat-mobile@2x.webp 2x">
+
               <source media="(min-width: 1440px)" srcset="img/index-cat-desktop.png 1x, img/index-cat-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/index-cat-tablet.png 1x, img/index-cat-tablet@2x.png 2x">
-            <img class="programm__image" src="img/index-cat-mobile.png" srcset="img/index-cat-mobile@2x.png 2x" alt="Cat energy с курицей." width="280" height="271">
+              <img class="programm__image" src="img/index-cat-mobile.png" srcset="img/index-cat-mobile@2x.png 2x" alt="Cat energy с курицей." width="280" height="271">
             </picture>
           </p>
 
@@ -84,10 +91,8 @@
             <h2 class="get-slim-fat__title">Похудение</h2>
             <p class="get-slim-fat__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
             </p>
-            <a class="get-slim-fat__catalog-link">
+            <a class="get-slim-fat__catalog-link" href="#">
               <span class="get-slim-fat__catalog-link-letters">Каталог slim</span>
-              <svg class="get-slim-fat__catalog-link-svg" width="32" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#000" stroke-width="2" d="M0 6h18"/><path d="m24 6-6.75 5.2V.8L24 6Z" fill="#000"/>
-              </svg>
             </a>
           </div>
         </section>
@@ -97,10 +102,8 @@
             <h2 class="get-slim-fat__title">Набор массы</h2>
             <p class="get-slim-fat__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
             </p>
-            <a class="get-slim-fat__catalog-link">
+            <a class="get-slim-fat__catalog-link" href="#">
               <span class="get-slim-fat__catalog-link-letters">Каталог pro</span>
-              <svg class="get-slim-fat__catalog-link-svg" width="32" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#000" stroke-width="2" d="M0 6h18"/><path d="m24 6-6.75 5.2V.8L24 6Z" fill="#000"/>
-              </svg>
             </a>
           </div>
 
@@ -178,7 +181,7 @@
 
                 <span class="before-after__range">Было</span>
 
-                <input class="before-after__range-input" type="range" min="0" max="100" value="50" name="range" step="1">
+                <input class="before-after__range-input" aria-label="ползунок" type="range" min="0" max="100" value="50" name="range" step="1">
                 <span class="before-after__range">Стало</span>
 
               </div>

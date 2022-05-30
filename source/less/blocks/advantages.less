@@ -8,15 +8,16 @@
   .advantages {
     width: 280px;
     margin: 0 auto;
-    padding-top: 12px;
+    padding-top: 0;
   }
 
   .advantages__title {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 36px;
     line-height: 40px;
     color: #000000;
     font-weight: 400;
+    margin: 0;
     margin-bottom: 40px;
   }
 
@@ -55,7 +56,7 @@
     font-weight: 400;
     line-height: 18px;
     color: @darkgrey;
-    padding: 5px 0 5px 80px;
+    padding: 2px 0 5px 80px;
     height: 60px;
     width: 280px;
     box-sizing: border-box;
@@ -71,15 +72,15 @@
   .advantages {
     width: 708px;
     margin: 0 auto;
-    padding-top: 45px;
+    padding-top: 25px;
   }
 
   .advantages__title {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 60px;
     line-height: 60px;
     color: #000000;
-    margin-bottom: 74px;
+    margin-bottom: 71px;
   }
 
   .advantages__list {
@@ -89,7 +90,7 @@
     column-gap: 62px;
     grid-template-rows: 227px 227px;
     row-gap: 90px;
-    margin-bottom: 47px;
+    margin-bottom: 59px;
     counter-reset: advantages-counter;
   }
 
@@ -116,7 +117,7 @@
   .advantages__item {
     padding-top: 112px;
     padding-left: 0;
-    width: 234px;
+    width: 251px;
     height: 232px;
     counter-increment: advantages-counter;
     position: relative;
@@ -124,14 +125,14 @@
 
   .advantages__item::after {
     content: counter(advantages-counter);
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     width: 120px;
     position: absolute;
     font-size: 280px;
     color: #f2f2f2;
     z-index: -1;
-    top: 100px;
-    right: -8px;
+    top: 94px;
+    right: 15px;
   }
 
   .advantages__item-span {
@@ -141,7 +142,7 @@
     line-height: 24px;
     color: @darkgrey;
     min-height: 72px;
-    width: 201px;
+    width: 234px;
   }
 }
 
@@ -149,10 +150,11 @@
   .advantages {
     width: 1220px;
     margin: 0 auto 39px auto;
+    padding: 0;
   }
 
   .advantages__title {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 60px;
     line-height: 60px;
     color: #000000;
@@ -162,6 +164,7 @@
   .advantages__list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 1220px;
     counter-reset: advantages-counter;
   }
@@ -189,7 +192,7 @@
   .advantages__item {
     padding-top: 112px;
     padding-left: 0;
-    width: 234px;
+    width: 247px;
     height: 232px;
     counter-increment: advantages-counter;
     position: relative;
@@ -197,14 +200,14 @@
 
   .advantages__item::after {
     content: counter(advantages-counter);
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     width: 120px;
     position: absolute;
     font-size: 280px;
     color: #f2f2f2;
     z-index: -1;
-    top: 100px;
-    right: -8px;
+    top: 94px;
+    right: 12px;
   }
 
   .advantages__item-span {

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
   </head>
   <body class="page__body">
     <header class="main-header main-header--nojs">
@@ -72,8 +74,6 @@
                   <a class="card__title-link title-link" href="#">Cat Energy<br> PRO 500&nbsp;г</a>
                 </h3>
                 <a class="card__image-wrapper" href="#">
-                  <!--<img class="card__image" src="img/catalog-1.png" alt="Cat Energy PRO 500 г" width="140" height="112">-->
-
                   <picture>
                     <source media="(min-width: 1440px)" srcset="img/catalog-1-desktop.png 1x, img/catalog-1-desktop@2x.png 2x" width="172" height="196">
                     <source media="(min-width: 768px)" srcset="img/catalog-1-tablet.png 1x, catalog-1-tablet@2x.png 2x" width="168" height="200">
@@ -388,7 +388,11 @@
 
             <div class="card-more">
               <div class="card-more__wrapper">
-                <svg class="card-more__cards-plus" width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#D3D3D3" stroke-width="2" d="M15 0v30M30 15H0"/></svg>
+                <svg class="card-more__cards-plus" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="15" x2="15" y2="30" stroke="#D3D3D3" stroke-width="2"/>
+                  <line x1="30" y1="15" y2="15" stroke="#D3D3D3" stroke-width="2"/>
+                  </svg>
+
                 <p class="card-more__cards-show">Показать еще 100500 товаров</p>
                 <p class="card-more__cards-description">На самом деле вкусов гораздо больше!</p>
 
@@ -534,7 +538,7 @@
 
     <footer class="main-footer">
 
-      <section class="map">
+      <section class="map map__catalog">
         <h2 class="visually-hidden">Карта</h2>
         <div class="map__container">
           <div class="map__invitation-list-wrapper">

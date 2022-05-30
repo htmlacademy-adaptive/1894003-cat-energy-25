@@ -4,10 +4,6 @@
     border: none;
   }
 
-  .comment-data__title {
-    position: relative;
-  }
-
   .comment-data__title::before {
     content: "";
     width: 100vw;
@@ -22,6 +18,20 @@
   .comment-data__title-wrapper {
     max-width: 280px;
     margin: 29px auto 39px auto;
+  }
+
+  .comment-data__title {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    margin: 0;
+    padding: 0 23px;
+    display: inline-block;
+    background-color: @white;
+    margin-left: -23px;
+    position: relative;
   }
 
   .comment-data__wrapper {
@@ -46,7 +56,7 @@
   }
 
   .comment-data__input::-webkit-input-placeholder {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 18px;
@@ -57,7 +67,7 @@
   }
 
   .comment-data__input:-moz-placeholder {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 18px;
@@ -78,11 +88,15 @@
     margin: 0 auto;
   }
 
-  .title-line {
+  .comment-data__title::before {
+    display: none;
+  }
+
+  .comment-data__title-line {
     position: relative;
   }
 
-  .title-line::before {
+  .comment-data__title-line::before {
     position: absolute;
     width: 100%;
     content: "";
@@ -98,7 +112,7 @@
     margin: 0 auto 76px auto;
   }
 
-  .selection-title {
+  .comment-data__title {
     font-family: "Oswald", sans-serif;
     font-size: 36px;
     font-weight: 400;
@@ -160,11 +174,15 @@
     margin: 0 auto 69px auto;
   }
 
-  .title-line {
+  .comment-data__title::before {
+    display: none;
+  }
+
+  .comment-data__title-line {
     position: relative;
   }
 
-  .title-line::before {
+  .comment-data__title-line::before {
     position: absolute;
     width: 100%;
     content: "";
@@ -180,8 +198,8 @@
     margin: 0 auto 76px auto;
   }
 
-  .selection-title {
-    font-family: "Oswald", sans-serif;
+  .comment-data__title {
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 36px;
     font-weight: 400;
     line-height: 36px;

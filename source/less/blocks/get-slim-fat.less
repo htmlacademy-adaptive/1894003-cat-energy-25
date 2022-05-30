@@ -1,9 +1,9 @@
 @media (min-width: @mobile-width) {
   .get-slim-fat--slim {
     width: 280px;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 18px auto;
     background-color: @lightgrey;
-    padding: 17px 20px 18px 20px;
+    padding: 11px 20px 18px 20px;
     background-image: url("../img/cat_back.svg");
     background-repeat: no-repeat;
     background-position: left 20px top 24px;
@@ -14,10 +14,10 @@
     width: 280px;
     margin: 0 auto 20px auto;
     background-color: @lightgrey;
-    padding: 17px 20px 18px 20px;
+    padding: 11px 20px 18px 20px;
     background-image: url("../img/cat_back-fat.svg");
     background-repeat: no-repeat;
-    background-position: left 13px top 30px;
+    background-position: left 13px top 26px;
     box-sizing: border-box;
   }
 
@@ -29,9 +29,9 @@
 
   .get-slim-fat__title {
     font-size: 24px;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     margin-left: 70px;
-    margin-bottom: 24px;
+    margin-bottom: 30px;
     text-transform: uppercase;
     font-weight: 400;
   }
@@ -40,7 +40,6 @@
     font-size: 14px;
     line-height: 18px;
     font-family: "Arial", sans-serif;
-    color: @darkgrey;
     margin: 0;
     padding-bottom: 23px;
     border-bottom: 1px solid #d9d9d9;
@@ -48,15 +47,56 @@
   }
 
   .get-slim-fat__catalog-link {
-    margin-top: 20px;
+    margin-top: 15px;
+    position: relative;
+    display: inline-block;
+    width: 165px;
+    text-decoration: none;
+    color: @darkgrey;
   }
 
   .get-slim-fat__catalog-link-letters {
     font-size: 16px;
     line-height: 20px;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     text-transform: uppercase;
     margin: 0;
+  }
+
+  .get-slim-fat__catalog-link::after {
+    background-image: url("../img/icon-arrow-short.svg");
+    background-repeat: no-repeat;
+    background-position: 13px 4px;
+    background-size: 56%;
+    position: absolute;
+    content: "";
+    z-index: 25;
+    width: 46px;
+    height: 30px;
+  }
+
+  .get-slim-fat__catalog-link:hover::after {
+    background-image: url("../img/icon-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-position: 13px 4px;
+    background-size: 60%;
+    position: absolute;
+    content: "";
+    z-index: 25;
+    width: 60px;
+    height: 30px;
+  }
+
+  .get-slim-fat__catalog-link:active::after {
+    background-image: url("../img/icon-arrow-grey.svg");
+    background-repeat: no-repeat;
+    background-position: 13px 4px;
+    background-size: 60%;
+    position: absolute;
+    content: "";
+    z-index: 25;
+    width: 60px;
+    height: 30px;
   }
 }
 
@@ -69,20 +109,21 @@
   .get-slim-fat--slim {
     width: 100%;
     background-color: @lightgrey;
-    padding: 77px 19px 53px 52px;
+    padding: 69px 19px 57px 52px;
     background-image: url("../img/cat_slim-tablet.svg");
     background-repeat: no-repeat;
-    background-position: right 20px top 98px;
+    background-position: right 61px top 79px;
     box-sizing: border-box;
+    margin-bottom: 32px;
   }
 
   .get-slim-fat--fat {
     width: 100%;
     background-color: @lightgrey;
-    padding: 77px 20px 53px 52px;
+    padding: 69px 20px 58px 52px;
     background-image: url("../img/cat_fat-tablet.svg");
     background-repeat: no-repeat;
-    background-position: right 20px top 98px;
+    background-position: right 27px top 91px;
     box-sizing: border-box;
   }
 
@@ -95,8 +136,8 @@
 
   .get-slim-fat__title {
     font-size: 36px;
-    font-family: "Oswald", sans-serif;
-    margin: 0 0 24px 0;
+    font-family: "Oswald", "Arial", sans-serif;
+    margin: 0 0 17px 0;
     width: 360px;
   }
 
@@ -105,19 +146,63 @@
     line-height: 24px;
     font-family: "Arial", sans-serif;
     color: #000000;
-    width: 360px;
     border: none;
-    margin: 0 0 48px 0;
+    margin: 0 0 32px 0;
+    width: 343px;
   }
 
   .get-slim-fat__catalog-link {
     margin: 0;
-    width: 360px;
+    position: relative;
+    display: inline-block;
+    width: 165px;
+    text-decoration: none;
+    color: @darkgrey;
   }
 
   .get-slim-fat__catalog-link-letters {
     font-size: 20px;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
+  }
+
+  .get-slim-fat__catalog-link-svg {
+    margin: 0 0 3px 22px;
+  }
+
+  .get-slim-fat__catalog-link::after {
+    background-image: url("../img/icon-arrow-short.svg");
+    background-repeat: no-repeat;
+    background-position: 26px 4px;
+    background-size: 40%;
+    position: absolute;
+    content: "";
+    z-index: 25;
+    width: 65px;
+    height: 30px;
+  }
+
+  .get-slim-fat__catalog-link:hover::after {
+    background-image: url("../img/icon-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-position: 26px 4px;
+    background-size: 40%;
+    position: absolute;
+    content: "";
+    z-index: 25;
+    width: 85px;
+    height: 30px;
+  }
+
+  .get-slim-fat__catalog-link:active::after {
+    background-image: url("../img/icon-arrow-grey.svg");
+    background-repeat: no-repeat;
+    background-position: 26px 4px;
+    background-size: 40%;
+    position: absolute;
+    content: "";
+    z-index: 25;
+    width: 85px;
+    height: 30px;
   }
 }
 
@@ -126,7 +211,7 @@
     display: flex;
     justify-content: space-between;
     width: 1220px;
-    margin: 0 auto;
+    margin: 0 auto 71px auto;
   }
 
   .get-slim-fat--slim {
@@ -134,8 +219,8 @@
     background-repeat: no-repeat;
     background-position: left 56px top 44px;
     width: 570px;
-    margin: 0 55px 0 0;
-    padding: 77px 51px 55px 52px;
+    margin: 0 80px 0 0;
+    padding: 69px 51px 58px 52px;
     box-sizing: border-box;
   }
 
@@ -144,8 +229,8 @@
     background-repeat: no-repeat;
     background-position: left 34px top 49px;
     width: 570px;
-    margin: 0 55px 0 0;
-    padding: 77px 51px 55px 52px;
+    margin: 0;
+    padding: 69px 51px 58px 52px;
     box-sizing: border-box;
   }
 
@@ -156,8 +241,8 @@
 
   .get-slim-fat__title {
     font-size: 36px;
-    font-family: "Oswald", sans-serif;
-    margin: 0 0 73px 162px;
+    font-family: "Oswald", "Arial", sans-serif;
+    margin: 0 0 65px 162px;
     width: 280px;
   }
 
@@ -166,8 +251,9 @@
     line-height: 24px;
     font-family: "Arial", sans-serif;
     color: #000000;
-    margin: 0 0 23px 0;
+    margin: 0 0 32px 0;
     width: 467px;
+    padding: 0;
   }
 
   .get-slim-fat__catalog-link {
@@ -178,6 +264,6 @@
 
   .get-slim-fat__catalog-link-letters {
     font-size: 20px;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
   }
 }
