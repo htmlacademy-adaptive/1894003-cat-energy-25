@@ -31,10 +31,6 @@
     display: none;
   }
 
-  .addition-data__title {
-    position: relative;
-  }
-
   .addition-data__title::before {
     content: "";
     width: 100vw;
@@ -50,8 +46,8 @@
     position: relative;
   }
 
-  .selection-title {
-    font-family: "Oswald", sans-serif;
+  .addition-data__title {
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 26px;
@@ -61,6 +57,7 @@
     display: inline-block;
     background-color: @white;
     margin-left: -23px;
+    position: relative;
   }
 
   .addition-data__wrapper {
@@ -84,7 +81,7 @@
   }
 
   .addition-data__label {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 18px;
@@ -130,13 +127,40 @@
     margin-bottom: 54px;
   }
 
-  .addition-data__title::before,
-  .selection-title::before {
+  .addition-data__title::before {
     display: none;
+  }
+
+  .addition-data__title-line {
+    position: relative;
+  }
+
+  .addition-data__title-line::before {
+    position: absolute;
+    width: 100%;
+    content: "";
+    top: 50%;
+    height: 2px;
+    background-color: @basicgreen;
+    z-index: -1;
+    display: inline;
   }
 
   .addition-data__wrapper {
     width: 100%;
+  }
+
+  .addition-data__title {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    margin: 0;
+    padding: 0 38px;
+    display: inline-block;
+    background-color: @white;
+    margin-left: -38px;
   }
 
   .addition-data__title-wrapper {
@@ -159,7 +183,7 @@
   }
 
   .addition-data__label {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
@@ -205,14 +229,41 @@
     margin-bottom: 82px;
   }
 
-  .addition-data__title::before,
-  .selection-title::before {
+  .addition-data__title::before {
     display: none;
+  }
+
+  .addition-data__title-line {
+    position: relative;
+  }
+
+  .addition-data__title-line::before {
+    position: absolute;
+    width: 100%;
+    content: "";
+    top: 50%;
+    height: 2px;
+    background-color: @basicgreen;
+    z-index: -1;
+    display: inline;
   }
 
   .addition-data__title-wrapper {
     max-width: 1220px;
     margin: 0 auto 79px auto;
+  }
+
+  .addition-data__title {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    margin: 0;
+    padding: 0 38px;
+    display: inline-block;
+    background-color: @white;
+    margin-left: -38px;
   }
 
   .addition-data__wrapper {
@@ -233,7 +284,7 @@
   }
 
   .addition-data__label {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;

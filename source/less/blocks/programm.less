@@ -1,5 +1,5 @@
 .programm {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
 }
 
@@ -39,11 +39,16 @@
     line-height: 14px;
     margin-bottom: 28px;
     font-weight: 400;
+    text-transform: uppercase;
   }
 
   .programm__image-button {
     width: 100%;
     display: block;
+  }
+
+  .programm__image-wrapper {
+    margin: 0;
   }
 }
 
@@ -66,7 +71,8 @@
     font-size: 60px;
     line-height: 60px;
     text-align: left;
-    margin: 65px 0 41px 88px;
+    margin: 47px 0 41px 88px;
+    width: 555px;
   }
 
   .programm__slogan {
@@ -80,6 +86,7 @@
   .programm__image {
     width: 708px;
     height: 609px;
+    margin-bottom: -4px;
   }
 
   .programm__image-button-wrapper {
@@ -98,8 +105,8 @@
 @media (min-width: @desktop-width) {
   .programm {
     width: 100%;
-    margin: -143px 0 0 0;
-    background-image: url("../img/cat-green-desktop.jpg");
+    margin: -159px 0 89px 0;
+    background-image: url("../img/cat-green-desktop.jpg"), linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 50%, rgba(104, 183, 56, 1) 50%, rgba(104, 183, 56, 1) 100%);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: auto 694px;
@@ -107,18 +114,19 @@
     overflow: hidden;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/cat-green-desktop@2x.jpg");
+      background-image: url("../img/cat-green-desktop@2x.jpg"), linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 50%, rgba(104, 183, 56, 1) 50%, rgba(104, 183, 56, 1) 100%);
       background-repeat: no-repeat;
       background-position: center top;
       background-size: auto 694px;
       max-width: 3087px;
       overflow: hidden;
+      background-color: @basicgreen;
     }
   }
 
   .programm__wrapper {
     width: 1220px;
-    margin: 143px auto 62px auto;
+    margin: 175px auto 0 auto;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -129,7 +137,7 @@
     font-size: 60px;
     line-height: 60px;
     text-align: left;
-    margin: 48px 0 40px 0;
+    margin: 48px 0 40px 81px;
     width: 420px;
   }
 
@@ -137,7 +145,7 @@
     font-size: 20px;
     line-height: 20px;
     text-align: left;
-    margin: 0 0 52px 0;
+    margin: 0 0 52px 81px;
     width: 420px;
   }
 
@@ -146,8 +154,8 @@
     height: 499px;
     display: inline;
     position: absolute;
-    top: 36px;
-    left: 403px;
+    top: -35px;
+    left: 447px;
   }
 
   .programm__image-button-wrapper {
@@ -156,6 +164,6 @@
   }
 
   .programm__image-button {
-    margin: 0 0 180px 0;
+    margin: 0 0 180px 81px;
   }
 }
